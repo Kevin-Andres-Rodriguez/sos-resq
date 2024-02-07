@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css//editar.css">
+{{#each lista}}
+<!--{{id_registro_familiar}}/{{id_detalle_familiar}}-->
+<form action="/registro_familiar/actualizar/{{id_registro_familiar}}/{{id_detalle_familiar}}" method="post">
+
+
+    <div id="cliente-editar-container">
+        <h2>Registro familiar</h2>
+
+        <label id="nombre" for="nombres">Nombres</label>
+        <input type="text" id="nombres" name="nombres" value="{{nombres}}" required>
+        <br>
+        <label id="apellido" for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}" required>
+
+        <label id="correo" for="correo_electronico">Correo</label> <br>
+        <input type="text" id="correo_electronico" name="correo_electronico" value="{{correo_electronico}}" required>
+
+        <label id="celular" for="telefono">Celular</label> <br>
+        <input type="text" id="telefono" name="telefono" value="{{telefono}}" required>
+
+
+
+        <br>
+        <br>
+
+        <div>
+            <button type="submit">Actualizar</button>
+        </div>
+
+    </div>
+</form>
+
+<div class="cancelar">
+    <button type="submit">Cancelar</button>
+</div>
+
+{{/each}}

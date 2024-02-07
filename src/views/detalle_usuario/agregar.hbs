@@ -1,0 +1,29 @@
+{{!-- Funcional --}}
+<link rel="stylesheet" href="/css/buses/agregar.css">
+<form action="/detalle_usuario/agregar" method="post">
+
+    <body>
+        <div id="container">
+
+            <h2>Usuarios</h2>
+
+            <label id="contacts" for="contacto">Contactos de emergencia:</label> <br>
+            <input type="text" id="contacto" name="contactos_emergencia" required>
+
+            <label id="status" for="estado">Estado:</label> <br>
+            <select id="estado" name="estado">
+                <option value="activo">Activo</option>
+                <option value="inactivo">Inactivo</option>
+            </select>
+
+
+
+            <div id="boton">
+                <button type="submit" id="">Guardar</button>
+            </div>
+            <div id="boton">
+                <button type="submit" id="">Cancelar</button>
+            </div>
+        </div>
+    </body>
+</form>

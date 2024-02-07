@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  background-color: #f8f9fa;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.textos {
+  color: #109cf1;
+  font-size: 24px;
+}
+
+.user-info {
+  margin-bottom: 20px;
+}
+
+.user-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.menu-item img {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.menu-item:hover {
+  color: #109cf1;
+}
+
+.menu-item.active {
+  background-color: white;
+}
+
+.underline-text {
+  color: #333;
+  text-decoration: underline;
+}
+
+h1.textos {
+  margin: 10px;
+  position: absolute;
+}
+
+h2, p {
+  margin-right: 10px;
+
+}
+
+.loca { 
+	color:rgba(0, 0, 0, 1);
+	width:370px;
+	height:1 4px;
+  position:absolute;
+  left:550px;
+	top:60px;
+	font-family:Inknut Antiqua;
+	text-align:left;
+	font-size:30px;
+	letter-spacing:0.15000000596046448;
+	line-height:px;
+}
+.cuando { 
+  color: rgba(0, 0, 0, 1);
+  width: 400px;
+  height: 50px;
+  position:absolute;
+  left:800px;
+	top:200px;
+  font-family: Inika;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.mapa  {
+  width:300px; 
+  height:200px;
+  position: absolute;
+  left: 400px;  
+  top: 150px; 
+} 
+.dis { 
+	color:rgba(120.0624842941761, 30.515881329774857, 100.36223620176315, 1);
+	width:200px;
+	height:48px;
+  position:absolute;
+  left:400px;
+	top:380px; 
+	font-family:Inknut Antiqua;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0.15000000596046448;
+	line-height:px;
+}
+.visua { 
+	color:rgba(120.00000044703484, 31.000000052154064, 100.00000163912773, 1);
+	width:580px;
+	height:48px;
+  position:absolute;
+  left:800px;
+	top:380px; 
+	font-family:Inknut Antiqua;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0.15000000596046448;
+	line-height:px;
+}
+
+.cpu  {
+  width:130px; 
+  height:120px;
+  position: absolute;
+  left: 430px;
+  top: 410px; 
+}
+.mapita  {
+  width:150px; 
+  height:100px;
+  position: absolute;
+  left: 930px;
+  top: 410px; 
+}  

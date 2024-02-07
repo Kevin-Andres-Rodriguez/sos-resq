@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/buses/editar.css">
+{{#each lista}}
+<form action="/detalle_usuario/editar/{{id_detalle_usuario}}" method="post">
+
+  <body>
+
+
+    <div id="container">
+      <h2>Actualización de usuarios</h2>
+
+      <label id="contact" for="contacto">Contacot de emergencia:</label> <br>
+      <input type="text" id="contacto" name="contactos_emergencia" value="{{contactos_emergencia}}" required>
+
+      <label id="status" for="estado">Estado:</label> <br>
+      <select id="estado" name="estado" value="{{estado}}">
+        <option value="activo">Activo</option>
+        <option value="inactivo">Inactivo</option>
+      </select>
+
+
+
+
+      <div id="boton">
+        <button type="submit">Actualizar</button>
+      </div>
+      <div class="cancelar">
+        <button type="submit">Cancelar</button>
+      </div>
+    </div>
+    </div>
+    </div>
+</form>
+{{/each}}
+
+</body>

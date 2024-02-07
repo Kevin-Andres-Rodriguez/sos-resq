@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="/css/usuarioagregar.css">
+<form action="/usuario/agregar" method="post">
+<body>
+    <img src="/img/sos.png" class="imagen1">
+    <img src="/img/iconsos.jpg" class="imagen2">
+    <form>
+    <div class="content">
+    <div class="form-container">
+        <div class="mb-3">
+
+        <label id="nombre" for="placa">Nombres</label> <br>
+        <input type="text" class="form-control" id="nombres" name="nombres" required>
+
+        <label id="apellido" for="placa">Apellidos</label> <br>
+        <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+
+        <label id="correo" for="placa">Correo eléctronico:</label> <br>
+        <input type="text" class="form-control" id="correos" name="correoelectronico" required>
+
+        <label id="contrasena" for="placa">Contraseña:</label> <br>
+        <input type="password" class="form-control" id="contrasenas" name="contrasena" required>
+
+        <label id="fecha" for="placa">Fecha de registro:</label> <br>
+        <input type="date" class="form-control" id="fechas" name="fecha_registro" required>
+
+        <label id="nacimiento" for="placa">Fecha de nacimiento:</label> <br>
+        <input type="date" class="form-control" id="nacimientos" name="fecha_nacimiento" required>
+
+        <br> <br><br>
+        <br> <br>
+        
+                <div id="boton">
+            <!-- Utilizar un enlace con href en lugar de un select -->
+            <label for="redireccion">Selecciona una opción:</label>
+            <select class="Selector">
+            <option value="resgistro">Registro Usuario</option>
+            <option value="resgistro">Registro Mascota</option>
+            <option value="resgistro">Registro Objeto</option>
+        </select>
+        </div>
+
+        <div id="boton">
+            <!-- Mantener un enlace de cancelar -->
+            <a href="#" onclick="cancelar()">Cancelar</a>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        function redirigirPagina() {
+            var seleccion = document.getElementById("redireccionSelect").value;
+            if (seleccion !== "") {
+                window.location.href = seleccion;
+            }
+        }
+
+        function cancelar() {
+            alert("Operación cancelada");
+        }
+    </script>
+</body>
+
+</form>
