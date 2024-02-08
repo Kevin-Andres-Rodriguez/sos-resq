@@ -1,63 +1,69 @@
+
 <link rel="stylesheet" href="/css/listarobjeto.css">
-<form action="objeto/listar/" method="get"></form>
+<form action="objeto/listar/"method="get"></form>
+ <body>       
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
 
-<body>
-
-    <nav>
-        <h1 class="textos">SOS RESQ</h1>
-        <div class="user-info">
-            <br><br>
-            <h2>Camila</h2>
-            <p>camila@example.com</p>
-        </div>
-        <a href="#" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro"> Registro Información</a>
-        <a href="#" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
-        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
-        <a href="#" class="menu-item"><img src="/img/circulo.png" Guardados> Datos Guardados</a>
-        <a href="#" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
-        <a href="#" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
-        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Ubicación"> Historial de Ubicación</a>
-        <a href="#" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de Activaciones</a>
-        <br><br>
-        <a href="#" class="underline-text">cerrar sesion <u></u></a>
-
-    </nav>
-
-    <div class="crud-container">
-        <div class="crud-content">
-            <h1>Listado de objetos</h1>
-
-            <div class="row">
-                {{#each lista}}
-                <div id="tarjeta">
-                    <u>
-                        <h2>Datos del Objeto</h2>
-                    </u>
-                    <div>
-                        <p>{{marca}}</p>
-                        <p>{{modelo}}</p>
-                        <p>{{numero_serie}}</p>
-                        <p>{{numero_contacto}}</p>
-                        <p>{{correo_objeto}}</p>
-                        <p>{{fecha_perdida}}</p>
-                        <p>{{hora_perdida}}</p>
-                        <p>{{ubicacion_perdida}}</p>
-                        <p>{{color}}</p>
-                        <div>
-                            <div>
-                                <a href="/objeto/editar/{{id_objeto}}"><button type="button">Editar</button></a>
-                            </div>
-                            </p>
-                            <div>
-                                <a href="/objeto/eliminar/{{id_objeto}}"><button type="button"
-                                        style="background-color: red;">Eliminar</button></a>
-                            </div>
-                            </p>
-                        </div>
-                    </div>
-                    {{/each}}
-                </div>
-            </div>
-        </div>
+<nav id="sidebar">
+    <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
+    <div class="user-info">
+        <h3>Camila</h3>
+        <h4>camila@example.com</h4>
     </div>
-</body>
+    <a href="/usuario/agregar" class="menu-item active"><img src="/img/cuadrado.PNG" alt="Registro">Usuario</a>
+    <a href="" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
+    <a href="/registro_familiar/agregar" class="menu-item"><img src="/img/icorreo.png" alt="Familia"> Registro Familiares</a>
+    <a href="/registro_familiar/listar/" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
+    <a href="/mensaje_personalizado/agregar/" class="menu-item"><img src="/img/icorreo.png" alt="Notificación"> Mensaje de Notificación</a>
+    <a href="/mensaje_personalizado/listar/" class="menu-item"><img src="/img/circulo.png" alt="Datos"> Datos Guardados</a>
+    <a href="" class="menu-item"><img src="/img/4lineas.png" alt="Historial"> Historial</a>
+    <a href="/historial_activacion/agregar/" class="menu-item"><img src="/img/circulo1.png" alt="Activaciones"> Historial de  Activaciones</a>
+    <br><br>
+    <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+</nav>
+
+<h1 class="subir">Lista de objetos</h1>
+<div id="contenedor">
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Numero de serie</th>
+                <th>Numero de contacto</th>
+                <th>Correo electronico</th>
+                <th>Fecha de perdida</th>
+                <th>Hora de perdida</th>
+                <th>Ubicación de perdida</th>
+                <th>Color</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista}}
+            <tr>
+                <td>{{marca}}</td>
+                <td>{{modelo}}</td>
+                <td>{{numero_serie}}</td>
+                <td>{{numero_contacto}}</td>
+                <td>{{correo_objeto}}</td>
+                <td>{{fecha_perdida}}</td>
+                <td>{{hora_perdida}}</td>
+                <td>{{ubicacion_perdida}}</td>
+                <td>{{color}}</td>
+                <td>
+                    <a href="/objeto/editar/{{id_objeto}}">
+                        <button type="button" class="atras" style="background-color: #0a88d8;">editar</button>
+                    </a>
+                    <a href="/objeto/eliminar/{{id_objeto}}">
+                        <button type="button" class="boton" style="background-color: red;">Eliminar</button>
+                    </a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+</body>     
+    
