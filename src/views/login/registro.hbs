@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="/css/registro.css">
+<form action="/registro" method="post">
+
+    <body>
+        <img src="/img/sos.png" class="imagen1">
+        <img src="/img/iconsos.jpg" class="imagen2">
+        <form>
+            <div class="content">
+                <div class="form-container">
+
+                    <div class="mb-3">
+                        <label for="inputName">Nombres</label>
+                        <input type="text" class="form-control" name="nombres"    id="inputName" placeholder="Nombre" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+"
+                    title="Solo se permiten letras y espacios" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputLast">Apellidos</label>
+                        <input type="text" class="form-control" name="apellidos" id="inputLast" placeholder="Apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+"
+                    title="Solo se permiten letras y espacios" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDate">Correo Electronico</label>
+                        <input type="email" class="form-control" name="correoelectronico" id="inputDate" placeholder="Correo Electronico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
+                    </div>
+<div class="mb-3">
+    <label for="contrasena">Contraseña</label>
+    <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Contraseña">
+    <i id="mostrarContrasenaIcono" class="fas fa-eye"></i>
+</div>
+
+                   <div class="mb-3">
+                     <label for="inputPhone">Fecha de nacimiento</label>
+                      <input type="date" class="form-control" name="fecha_nacimiento" id="inputPhone" placeholder="Fecha de nacimiento" oninput="validarEdad(this)">
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputDirection">Contactos de emergencia</label>
+                        <input type="text" class="form-control" name="contactos_emergencia" id="inputDirection" placeholder="Contactos de emergencia" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
+                    </div>
+
+                    <div >
+                    <center><button type="submit">Guardar</button></center>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <h3>Favor de completar el registro para asignar el destinatario del botón de pánico</h3>
+
+
+        </div>
+        </div>
+            <script src="/script/registro/registro.js"></script>
+            <script src="/script/registro/fechanacimiento.js"></script>
+            
+    </body>
+</form>
+

@@ -1,0 +1,107 @@
+.imagen1 {
+    max-width: 50%;
+    height: 50vw;
+    display: flex;
+    margin-right: auto;
+    /* Centra la imagen horizontal y verticalmente */
+}
+
+.imagen2 {
+    max-width: 10%;
+    height: auto;
+    position: absolute;
+    top: 30px;
+    right: 260px;
+}
+
+.mb-3 {
+    margin-bottom: 1px;
+}
+
+label {
+    display: block;
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#btnUpdate {
+    background-color: #28a745;
+}
+
+.form-container {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f8f9fa;
+    margin-left: 100px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: -50px;
+    margin-top: -500px;
+    margin-right: 100px;
+}
+
+.form-container img {
+    max-width: 100px;
+    margin-left: 20px;
+    /* Cambié margin-right a margin-left */
+    order: 2;
+    /* Cambié el orden de la imagen */
+}
+
+h3 {
+    text-align: right;
+    margin-top: -10px;
+    margin-right: 5px;
+}
+
+p {
+    text-align: left;
+    margin-left: 900px;
+}
+
+
+/* Estilo general para los botones */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* ESTILOS PARA EL ICONO DE LA CONTRASEÑA   */ 
+
+.mb-3 {
+    position: relative;
+}
+
+#mostrarContrasenaIcono {
+    position: absolute;
+    right: 10px; /* Ajusta la posición del icono a la derecha según tus necesidades */
+    top: 70%; /* Centra verticalmente el icono */
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.form-control {
+    padding-right: 30px; /* Ajusta el espacio a la derecha del input para el icono */
+}

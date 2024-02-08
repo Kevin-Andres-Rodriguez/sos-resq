@@ -1,6 +1,5 @@
 const express = require("express");
-const { isLoggedIn, isNotLoggedIn } = require('../lib/auth');
-
+const { isLoggedIn } = require('../lib/auth');
 const router = express.Router();
 const { mostrar, mandar, listar, actualizar, eliminar, traer} = require("../controller/historial_activacion.controller");
 

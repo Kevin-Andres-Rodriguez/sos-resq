@@ -1,5 +1,5 @@
-const  express = require('express');
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 
 const { mostrarRegistro, Registro, mostrarLogin, Login, cierreSesion } = require ("../controller/registro.controller")
 
@@ -10,5 +10,4 @@ router.post("/login", Login)
 router.get("/CerrarSecion", cierreSesion)
 
 
-module.exports = router;
-
+module.exports = router

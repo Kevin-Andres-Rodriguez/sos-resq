@@ -46,7 +46,7 @@ sequelize.sync({ force: false })
     const mensajePersonalizadoModel = require('../models/mensaje_personalizado');
     const mascotaModel = require('../models/mascota');
     const historialActivacionModel = require('../models/historial_activacion');
-    const detalleUsuarioModel = require('../models/detalle_usuario');
+    //const detalleUsuarioModel = require('../models/detalle_usuario');
     const detallePersonaModel = require('../models/detalle_persona');
     const detalleObjetoModel = require('../models/detalle_objeto');
     const detalleMensajePersonalizadoModel = require('../models/detalle_mensaje_personalizado');
@@ -64,7 +64,7 @@ sequelize.sync({ force: false })
     const mensaje_personalizado =mensajePersonalizadoModel(sequelize, Sequelize)
     const mascota = mascotaModel (sequelize, Sequelize)
     const historial_activacion = historialActivacionModel (sequelize, Sequelize)
-    const detalle_usuario = detalleUsuarioModel(sequelize, Sequelize)
+    //const detalle_usuario = detalleUsuarioModel(sequelize, Sequelize)
     const detalle_persona = detallePersonaModel(sequelize, Sequelize)
     const detalle_objeto = detalleObjetoModel(sequelize, Sequelize)
     const detalle_mensaje_personalizado = detalleMensajePersonalizadoModel(sequelize, Sequelize)
@@ -77,8 +77,8 @@ sequelize.sync({ force: false })
 
     
     //usuario
-    usuario.hasMany(detalle_usuario)
-    detalle_usuario.belongsTo(usuario)
+    //usuario.hasMany(detalle_usuario)
+    //detalle_usuario.belongsTo(usuario)
 
     usuario.hasMany(historial_activacion)
     historial_activacion.belongsTo(usuario) 
@@ -130,7 +130,7 @@ module.exports = {
     mensaje_personalizado,
     mascota,
     historial_activacion,
-    detalle_usuario,
+    //detalle_usuario,
     detalle_persona,
     detalle_objeto,
     detalle_mensaje_personalizado,

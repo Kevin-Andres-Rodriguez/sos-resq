@@ -1,0 +1,130 @@
+.formulario{
+    position: absolute;
+    top: 40%;
+    right: 19%;
+    transform: translate(-80%, .20%);
+    width: 100px;
+}
+
+.contraseña{
+    position: absolute;
+    top: 48%;
+    right: 19%;
+    transform: translate(-80%, .20%);
+    width: 100px;
+}
+
+.login{
+    position: absolute;
+    top: 55%;
+    right: 20%;
+    transform: translate(-80%, .20%);
+    width: 100px;
+}
+
+h2 {
+    text-align: right;
+    margin-top: -300px;
+    margin-right: 235px;
+}
+
+h4 {
+    text-align: right;
+    margin-right: 315px;
+}
+
+.imagen1{
+    max-width: 50%;
+    height: 50vw;
+    display: flex;
+    margin-right: auto; /* Centra la imagen horizontal y verticalmente */
+}
+
+.imagen2 {
+    width: 150px; 
+    height: auto; 
+    position: absolute; 
+    top: 70px; 
+    right: 290px;
+
+
+}
+
+label {
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    color: #adadad;
+}
+
+.LB{
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    color: #adadad;
+}
+
+.img{
+    position: absolute;
+    width: 15px;
+    top: 10%;
+    left: 10%;
+}
+
+.login input[type="submit"] {
+    background-color: #413df5;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 25px;
+}
+
+
+/* ESTILOS DEL ICONO CORREO */
+
+
+.input-con-icono1 {
+    position: relative;
+}
+
+.input-con-icono1 i {
+    position: absolute;
+    left: 10px; /* Puedes ajustar la posición según tu diseño */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #555; /* Puedes cambiar el color según tus preferencias */
+}
+
+.input-con-icono1 input {
+    padding-left: 30px; /* Ajusta el espacio a la derecha del icono */
+}
+
+
+/* ESTILOS DEL ICONO CONTRASEÑA */
+
+.input-con-icono {
+    position: relative;
+}
+
+.input-con-icono i {
+    position: absolute;
+    left: 10px; /* Puedes ajustar la posición según tu diseño */
+    top: 27%;
+    transform: translateY(-50%);
+    color: #555; /* Puedes cambiar el color según tus preferencias */
+}
+
+.input-con-icono input {
+    padding-left: 30px; /* Ajusta el espacio a la derecha del icono */
+}
+
+
+ 
+/* ESTILOS DEL ICONO CONTRASEÑA */
+
+#mostrarContrasenaIcono {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    top: -11px;
+    left: 160px;
+}
