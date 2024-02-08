@@ -48,7 +48,7 @@ registro_familiarCtl.actualizar = async (req, res) => {
         nombres,
         apellidos,
         correo_electronico,
-        //detalle
+
         telefono
     }
     const nuevoEnvioDetalle = {

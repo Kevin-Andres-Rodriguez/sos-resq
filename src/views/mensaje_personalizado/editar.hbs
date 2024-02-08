@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="/css/buses/editar.css">
 {{#each lista}}
-<form action="/mensaje_personalizado/editar/{{id_mensaje_personalizado}}" method="post">
+<form action="/mensaje_personalizado/actualizar/{{id_mensaje_personalizado}}/{{id_detalle_mensaje_personalizado}}" method="post">
 
   <body>
 
@@ -17,6 +17,9 @@
 
       <label id="fecha_mensajes" for="fecha_mensaje">Fecha mensaje</label> <br>
       <input type="date" id="fecha_mensaje" name="fecha_mensaje" value="{{fecha_mensaje}}" required>
+
+      <label id="hora" for="hora">Hora de perdida</label> <br>
+      <input type="time" id="hora" name="hora_mensaje" value="{{hora_mensaje}}" required>
 
 
       <div id="boton">

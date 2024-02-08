@@ -27,7 +27,7 @@ personaCtl.mandar = async (req, res) => {
 }
 
 personaCtl.listar = async (req, res) => {
-    const lista = await sql.query('SELECT * FROM personas INNER JOIN detalle_personas ON personas.id_persona = detalle_personas.id_detalle_familiar');
+    const lista = await sql.query('SELECT * FROM personas INNER JOIN detalle_personas ON personas.id_persona = detalle_personas.id_detalle_persona');
     res.render('persona/listar', { lista, showNavbar: true })
 }
 
@@ -35,19 +35,19 @@ personaCtl.listar = async (req, res) => {
 //traer datos
 personaCtl.traer = async (req, res) => {
     const ids = req.params.id
-    const lista = await sql.query('SELECT * FROM personas INNER JOIN detalle_personas ON personas.id_persona = detalle_personas.id_detalle_familiar   where id_persona =?', [ids])
+    const lista = await sql.query('SELECT * FROM personas INNER JOIN detalle_personas ON personas.id_persona = detalle_personas.id_detalle_persona   where id_persona =?', [ids])
     //const listan = await sql.query('select *from  detalle_familiares  where id_detalle_familiar =?', [ids])
     res.render('persona/editar',{ lista, showNavbar: true })
 }
 
 personaCtl.actualizar = async (req, res) => {
     
-    const id_objeto = req.params.idobjeto
+    const id_persona = req.params.idpersona
     const id_detalle = req.params.iddetalle
     const {nombres, apellidos, fecha_nacimiento, sex, direccion, correo_persona, numero_persona} = req.body
     
-    const nuevoEnvioObjeto = {
-        //id_registro_familiar:id_familiar,
+    const nuevoEnvioPersona = {
+        //id_persona:id_persona,
         nombres, 
         apellidos, 
         fecha_nacimiento, 
@@ -57,14 +57,14 @@ personaCtl.actualizar = async (req, res) => {
         numero_persona
     }
     const nuevoEnvioDetalle = {
-        //id_detalle_familiar:id_detalle,
+        //id_detalle_persona:id_detalle,
         numero_persona
     }
-    await orm.persona.findOne({ where: { id_persona: id_objeto } })
+    await orm.persona.findOne({ where: { id_persona: id_persona } })
         .then(actualizar => {
-            actualizar.update(nuevoEnvioObjeto)
+            actualizar.update(nuevoEnvioPersona)
         })
-    await orm.detalle_familiar.findOne({ where: { id_detalle_familiar: id_detalle } })
+    await orm.detalle_persona.findOne({ where: { id_detalle_persona: id_detalle } })
     .then(actualizar => {
         actualizar.update(nuevoEnvioDetalle)
     })
@@ -76,8 +76,8 @@ personaCtl.actualizar = async (req, res) => {
 //Funciona
 personaCtl.eliminar = async (req, res) => {
     const ids = req.params.id
-    await orm.objeto.destroy({ where: { id_persona: ids } }),
-    await orm.detalle_persona.destroy({ where: { id_detalle_familiar: ids } })
+    await orm.persona.destroy({ where: { id_persona: ids } }),
+    await orm.detalle_persona.destroy({ where: { id_detalle_persona: ids } })
         .then(() => {
             req.flash('success', 'Eliminado exitosamente')
             res.redirect('/persona/listar/');
