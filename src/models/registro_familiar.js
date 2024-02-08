@@ -10,8 +10,6 @@ const registro_familiar = (sequelize, type) => {
         correo_electronico: type.STRING,
         
 
-    
-
         crearRegistro_familiar:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
