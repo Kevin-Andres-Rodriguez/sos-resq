@@ -46,9 +46,8 @@ objetoCtl.actualizar = async (req, res) => {
     
     const id_objeto = req.params.idobjeto
     const id_detalle = req.params.iddetalle
-    const {marca,modelo,numero_serie,numero_contacto,correo_objeto,fecha_perdida,hora_perdida,ubicacion_perdida,color  } = req.body
-    
-    const nuevoEnvioFamiliar = {
+    const {  marca, modelo,numero_serie,numero_contacto,correo_objeto,fecha_perdida,hora_perdida,ubicacion_perdida,color  } = req.body
+    const nuevoEnvioObjeto = {
         //id_registro_familiar:id_familiar,
         marca,
         modelo,

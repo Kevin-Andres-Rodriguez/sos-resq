@@ -74,7 +74,7 @@ mascotaCtl.actualizar = async (req, res) => {
         .then(actualizar => {
             actualizar.update(nuevoEnvioMascota)
         })
-    await orm.detalle_familiar.findOne({ where: { id_detalle_mascota: id_detalle } })
+    await orm.detalle_mascota.findOne({ where: { id_detalle_mascota: id_detalle } })
     .then(actualizar => {
         actualizar.update(nuevoEnvioDetalle)
     })
