@@ -123,3 +123,21 @@ button {
 
 
 
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido a la derecha */
+    padding: 10px; /* Ajusta el espaciado según tu preferencia */
+    background-color: #f8f9fa; /* Ajusta el color de fondo según tu diseño */
+    position: fixed;
+    top: 0;
+    right: 0; /* Alinea el contenedor a la parte superior derecha */
+    z-index: 999; /* Asegura que esté en la parte superior */
+  }
+  
+  .logo {
+    width: 70px; /* Ajusta el tamaño según tu preferencia */
+    height: 70px; /* Ajusta el tamaño según tu preferencia */
+    margin-left: 10px; /* Espacio entre el logo y el borde derecho del contenedor */
+  }

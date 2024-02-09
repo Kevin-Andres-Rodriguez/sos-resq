@@ -176,3 +176,21 @@ h4 {
 
 
 
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px; 
+    background-color: #f8f9fa;
+    position: fixed;
+    top: 0;
+    right: 0; 
+    z-index: 999; 
+  }
+  
+  .logo {
+    width: 70px;
+    height: 70px; 
+    margin-left: 10px; 
+  }
