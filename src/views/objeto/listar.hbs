@@ -53,12 +53,16 @@
                 <td>{{ubicacion_perdida}}</td>
                 <td>{{color}}</td>
                 <td>
-                    <a href="/objeto/editar/{{id_objeto}}">
+
+                    <div class="contenedor-botones">
+                     <a href="/objeto/editar/{{id_objeto}}">
                         <button type="button" class="atras" style="background-color: #0a88d8;">editar</button>
                     </a>
                     <a href="/objeto/eliminar/{{id_objeto}}">
                         <button type="button" class="boton" style="background-color: red;">Eliminar</button>
-                    </a>
+                    </a>   
+                    </div>
+                    
                 </td>
             </tr>
             {{/each}}
