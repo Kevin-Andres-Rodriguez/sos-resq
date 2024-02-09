@@ -1,36 +1,68 @@
-h3 {
-    text-align: right;
-    margin-top: -10px;
+h1 {
+    text-align: center;
+    margin-top: 30px;
     margin-right: 5px;
 }
 
-/* Estilos para cada clase de botón con colores diferentes */
-.btn-mascota {
-    background-color: #3498db;
-    color: #fff;
-    border: 1px solid #3498db;
+body{
+    background-color: #ffffff;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: rgb(94, 92, 92);
+    margin: 0;
+    padding: 0;
+}
+.swiper{
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+.swiper-slide{
+    width: 300px;
+    height: 300px;
+    background-color: #7c7c7c7e;
+    box-shadow: 0 0 20px rgba(0,0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin-top: -100px;
+    margin-left: 40px;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.btn-objeto {
-    background-color: #e74c3c;
-    color: #fff;
-    border: 1px solid #e74c3c;
+.icons i{
+    font-size: 20px;
+    color: #ff0000;
+}
+.icons img{
+    width: 120px;
+}
+.product-content{
+    display: flex;
+    justify-content: space-between;
+}
+.product-txt span{
+    font-size: 25px;
+    color: #006eff;
+    font-weight: bold;
 }
 
-.btn-persona {
-    background-color: #2ecc71;
-    color: #fff;
-    border: 1px solid #2ecc71;
+.product-img{
+    flex-basis: 50%;
+    text-align: right;
 }
-
-/* Estilo al pasar el ratón por encima del botón */
-.btn:hover {
-    background-color: #555;
-    color: #fff;
+.product-img img{
+    width: 120px;
 }
-
-.btn-container {
-    margin-left: 780px;
-
-    /* Puedes ajustar el valor según tu preferencia */
+.btn-1{
+    display: inline-block;
+    padding: 13px 55px;
+    border: 1px solid #000000;
+    border-radius: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 50px;
 }
