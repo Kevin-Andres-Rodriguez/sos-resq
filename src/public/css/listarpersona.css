@@ -75,13 +75,16 @@ body {
 
 .contenedor {
     margin: 20px;
+   
 }
 
 table {
-    width: 950px;
+    width: 1000px;
+    height: 90px;
     border-collapse: collapse;
-    margin-top: -45px;
+    margin-top: 50px;
     margin-left: 270px;
+    font-size: 12px;
 }
 
 th, td {
@@ -93,7 +96,11 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
-
+h2{
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10%;
+}
 h1 {
     text-align: center;
     margin-bottom: 20px;
