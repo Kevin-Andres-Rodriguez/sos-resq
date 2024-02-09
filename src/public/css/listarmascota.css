@@ -74,12 +74,13 @@ body {
 
 .contenedor {
     margin: 20px;
+    font-size: 13px;
 }
 
 table {
-    width: 950px;
+    width: 1000px;
     border-collapse: collapse;
-    margin-top: -90px;
+    margin-top: 80px;
     margin-left: 270px;
 }
 
@@ -96,6 +97,8 @@ th {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 15%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .subir {
