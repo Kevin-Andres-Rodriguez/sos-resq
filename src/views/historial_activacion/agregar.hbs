@@ -1,1 +1,74 @@
 {{!-- Solo son datos quemaos  --}}
+<link rel="stylesheet" href="/css/historialactivacion.css">
+<form action="/historial_activacion/agregar" method="post">
+ <body>       
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+ <nav id="sidebar">
+    <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
+    <div class="user-info">
+        <h3>Camila</h3>
+        <h4>camila@example.com</h4>
+    </div>
+    <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user" ></i> Usuario</a>
+    <a href="" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
+    <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users" ></i> Registro Familiares</a>
+    <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"  ></i> Datos Guardados</a>
+    <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope" ></i> Mensaje de Notificación</a>
+    <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
+    <a href="" class="menu-item"><i class="fas fa-history" ></i> Historial</a>
+    <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de Activaciones</a>
+    <br><br>
+    <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+</nav>
+
+<h1 class="subir">Lista de objetos</h1>
+<div id="contenedor">
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Numero de serie</th>
+                <th>Numero de contacto</th>
+                <th>Correo electronico</th>
+                <th>Fecha de perdida</th>
+                <th>Hora de perdida</th>
+                <th>Ubicación de perdida</th>
+                <th>Color</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each lista}}
+            <tr>
+                <td>{{marca}}</td>
+                <td>{{modelo}}</td>
+                <td>{{numero_serie}}</td>
+                <td>{{numero_contacto}}</td>
+                <td>{{correo_objeto}}</td>
+                <td>{{fecha_perdida}}</td>
+                <td>{{hora_perdida}}</td>
+                <td>{{ubicacion_perdida}}</td>
+                <td>{{color}}</td>
+                <td>
+
+                    <div class="contenedor-botones">
+                     <a href="/objeto/editar/{{id_objeto}}">
+                        <button type="button" class="atras" style="background-color: #0a88d8;">editar</button>
+                    </a>
+                    <a href="/objeto/eliminar/{{id_objeto}}">
+                        <button type="button" class="boton" style="background-color: red;">Eliminar</button>
+                    </a>   
+                    </div>
+                    
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>
+</body>  
+</form>   
+    
