@@ -19,7 +19,7 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px;
-    font-size: 13px;
+    font-size: 17px;
   }
   
   #sidebar a:hover {
@@ -71,7 +71,6 @@ body {
   }
 
 
-
   
 
 /* --------------------solo tabla------------------------------------*/
@@ -83,7 +82,7 @@ body {
 table {
   width: 950px;
   border-collapse: collapse;
-  margin-top: -90px;
+  margin-top: -50px;
   margin-left: 270px;
 }
 
@@ -100,12 +99,14 @@ th {
 h1 {
   text-align: center;
   margin-bottom: 20px;
+
 }
 
 .subir {
   padding: 100px;
   margin-left: 100px;
-  margin-top: -100px;
+  margin-top: -60px;
+  text-align: center;
 }
 
 .contenedor-botones {
