@@ -19,9 +19,11 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px;
-    font-size: 13px;
+    font-size: 17px;
 }
-
+h1{
+    text-align: center;
+}
 #sidebar a:hover {
     background-color: #6ddef1;
 }
