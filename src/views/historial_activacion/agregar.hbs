@@ -1,1 +1,76 @@
-{{!-- Solo son datos quemaos  --}}
+{{!-- Solo son datos quemaos --}}
+<link rel="stylesheet" href="/css/historialactivacion.css">
+<form action="/historial_activacion/agregar" method="post">
+
+    <body>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+        <nav id="sidebar">
+            <a href="/inicio">
+                <h1 class="textos">SOS RESQ</h1>
+            </a>
+            <div class="user-info">
+                <h3>Camila</h3>
+                <h4>camila@example.com</h4>
+            </div>
+            <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user"></i> Usuario</a>
+            <a href="" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users"></i> Registro Familiares</a>
+            <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope"></i> Mensaje de
+                Notificación</a>
+            <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="" class="menu-item"><i class="fas fa-history"></i> Historial</a>
+            <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de
+                Activaciones</a>
+            <br><br>
+            <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+        </nav>
+
+        <h8 class="da">Historial de activaciones </h8>
+        <h7 class="todos">Todos (3)</h7>
+        <h6 class="ayer">Ayer </h6>
+        <h6 class="mes">El mes pasado </h6>
+
+        <div class="container">
+            <div class="row">
+                <div class="column">ID</div>
+                <div class="column">Nombre</div>
+                <div class="column">Dispositivo</div>
+                <div class="column">Fecha</div>
+                <div class="column">Hora</div>
+                <div class="column">Ubicación</div>
+                <div class="column">Contactos notificados</div>
+            </div>
+            <div class="row">
+                <div class="column">1</div>
+                <div class="column">Corona</div>
+                <div class="column">REDMI10A</div>
+                <div class="column">01/12/2024</div>
+                <div class="column">6:24 AM</div>
+                <div class="column">0123456789</div>
+                <div class="column">RGC9+FG9, Av. de los Shyris, Quito 170102</div>
+            </div>
+            <div class="row">
+                <div class="column">2</div>
+                <div class="column">Corona</div>
+                <div class="column">REDMI10A</div>
+                <div class="column">01/12/2024</div>
+                <div class="column">6:24 AM</div>
+                <div class="column">0123456789</div>
+                <div class="column">RGC9+FG9, Av. de los Shyris, Quito 170102</div>
+            </div>
+            <div class="row">
+                <div class="column">3</div>
+                <div class="column">Corona</div>
+                <div class="column">REDMI10A</div>
+                <div class="column">01/12/2024</div>
+                <div class="column">6:24 AM</div>
+                <div class="column">0123456789</div>
+                <div class="column">RGC9+FG9, Av. de los Shyris, Quito 170102</div>
+            </div>
+
+        </div>
+    </body>
+</form>

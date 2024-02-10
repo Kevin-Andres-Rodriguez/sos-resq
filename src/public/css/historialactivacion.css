@@ -1,0 +1,148 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #f8f9fa;
+    color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#sidebar a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 17px;
+}
+
+#sidebar a:hover {
+    background-color: #6ddef1;
+}
+
+.main {
+    padding: 20px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    background-color: black;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+.textos {
+    color: #109cf1;
+    font-size: 24px;
+    border-bottom: 1px solid purple; 
+    padding-bottom: 2px; 
+   border-bottom-width: 2.5px; 
+}
+.underline-text {
+    text-align: center;
+    border-bottom: 1px solid black; 
+    padding-bottom: 2px; 
+    border-bottom-width: 2.5px; 
+}
+
+.menu-item img {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: -10px;
+}
+
+/*tabla*/
+
+.da { 
+	color:rgba(0, 0, 0, 0.699999988079071);
+	width:400px;
+	height:48px;
+    position:absolute;
+	left:300px;
+	top:80px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:32px;
+	letter-spacing:0;
+}
+
+
+.todos { 
+	color:rgba(0, 0, 0, 1);
+	opacity:0.5;
+	width:232px;
+	height:20px;
+	position:absolute;
+	left:300px;
+	top:140px;
+	font-family:Poppins;
+	text-align:left;
+	font-size:13px;
+	letter-spacing:1;
+}
+.ayer{ 
+	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
+	opacity:0.5;
+	width:120px;
+	height:20px;
+    position:absolute;
+	left:360px;
+	top:115px;
+	
+}
+.mes { 
+	color:rgba(51.00000075995922, 77.00000301003456, 110.00000104308128, 1);
+	opacity:0.5;
+	width:120px;
+	height:20px;
+    position:absolute;
+	left:400px;
+	top:115px;
+	
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: nowrap; 
+    align-items: flex-start; 
+    max-width: 2000px; 
+    margin-left: 400px; 
+    margin-top: 150px ;
+}
+
+.row {
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 0px; 
+    width: 80%; 
+}
+
+.column {
+    flex: 1; 
+    min-width: 110px; 
+    padding: 1px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+    word-wrap: break-word; 
+}

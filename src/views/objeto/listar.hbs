@@ -63,11 +63,11 @@
                      <a href="/objeto/editar/{{id_objeto}}">
                         <button type="button" class="atras" style="background-color: #0a88d8;">editar</button>
                     </a>
-                    <a href="/objeto/eliminar/{{id_objeto}}">
-                        <button type="button" class="boton" style="background-color: red;">Eliminar</button>
+                    <a id="boton1"  data-id="{{id_objeto}}">
+                        <button   type="button" class="boton" style="background-color: red;">Eliminar</button>
                     </a>   
                     </div>
-                    
+                  <script src="/script/registro/eliminarobjeto.js"></script>   
                 </td>
             </tr>
             {{/each}}
