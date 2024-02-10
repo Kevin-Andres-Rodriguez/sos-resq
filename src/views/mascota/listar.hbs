@@ -63,9 +63,15 @@
           <td>{{nombre_propietario}}</td>
         <td>
            <div class="contenedor-botones">
-    <a href="/mascota/editar/{{id_mascota}}"><button class="cancelar" type="button">Editar</button></a>
+    <a href="/mascota/editar/{{id_mascota}}">
+    <button class="cancelar" type="button">Editar</button>
+    </a>
 
-        <a id="boton1"  data-id="{{id_mascota}}"><button style="background-color: red;" type="button">Eliminar</button></a>
+    <a class="botonEliminar"  data-id="{{id_mascota}}">
+      <button style="background-color: red;" type="button">Eliminar</button>
+    </a>
+
+
        
     </div>
      <script src="/script/registro/eliminarmascota.js"></script>
