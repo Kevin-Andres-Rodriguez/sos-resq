@@ -19,7 +19,7 @@ body {
     text-decoration: none;
     display: block;
     padding: 10px;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 #sidebar a:hover {
@@ -69,6 +69,17 @@ body {
     text-decoration: none;
     margin-bottom: -10px;
 }
+
+.user-info h3 {
+    margin-top: -3px;
+    margin-left: 100px;
+  }
+  
+  h4 {
+      margin-top: -10px;
+      margin-left: 40px;
+      color: gray;
+  }
 
 /* TABLA */
 

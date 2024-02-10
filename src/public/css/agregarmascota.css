@@ -6,8 +6,14 @@
 }
 
 .column {
-    flex: 0 0 48%;
+    flex: 0 0 50% ;
+    margin-top: 28px;
     /* Ajusta según sea necesario, dejando un pequeño espacio entre columnas */
+}
+.column1{
+    margin-top: 20px;
+    flex: 0 0 50%;
+    padding: 6px;
 }
 
 .img3 {
@@ -32,7 +38,7 @@ label {
 
 .form-control {
     width: 100%;
-    padding: 6px;
+    padding: 4px;
     box-sizing: border-box;
     border-radius: 5px;
     border: 2px;
