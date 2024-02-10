@@ -1,65 +1,82 @@
-<link rel="stylesheet" href="/css/listarfamiliares.css">
-<form action="registro_familiar/listar/"method="get"></form>
- <body>
-    <div class="logo-container">
-        <img src="/img/logo.jpeg" class="logo" alt="Logo">
-    </div>
-    
-      <input type="checkbox" id="menu-toggle" class="menu-toggle">
-<label for="menu-toggle" class="menu-icon">&#9776;</label>
- <nav id="sidebar">
+<link rel="stylesheet" href="/css/listarfamiliares.css" />
+<form action="registro_familiar/listar/" method="get"></form>
+<body>
+  <div class="logo-container">
+    <img src="/img/logo.jpeg" class="logo" alt="Logo" />
+  </div>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+  <nav id="sidebar">
     <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
     <div class="user-info">
-        <h3>Camila</h3>
-        <h4>camila@example.com</h4>
+      <h3>Camila</h3>
+      <h4>camila@example.com</h4>
     </div>
-    <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user" ></i> Usuario</a>
-    <a href="" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users" ></i> Registro Familiares</a>
-    <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"  ></i> Datos Guardados</a>
-    <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope" ></i> Mensaje de Notificación</a>
-    <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="" class="menu-item"><i class="fas fa-history" ></i> Historial</a>
-    <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de Activaciones</a>
-    <br><br>
+    <a href="/usuario/agregar" class="menu-item active"><i
+        class="fas fa-user"
+      ></i>
+      Usuario</a>
+    <a href="" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+    <a href="/registro_familiar/agregar" class="menu-item"><i
+        class="fas fa-users"
+      ></i>
+      Registro Familiares</a>
+    <a href="/registro_familiar/listar/" class="menu-item"><i
+        class="fas fa-save"
+      ></i>
+      Datos Guardados</a>
+    <a href="/mensaje_personalizado/agregar/" class="menu-item"><i
+        class="fas fa-envelope"
+      ></i>
+      Mensaje de Notificación</a>
+    <a href="/mensaje_personalizado/listar/" class="menu-item"><i
+        class="fas fa-save"
+      ></i>
+      Datos Guardados</a>
+    <a href="" class="menu-item"><i class="fas fa-history"></i> Historial</a>
+    <a href="/historial_activacion/agregar/" class="menu-item"><i
+        class="fas fa-history"
+      ></i>
+      Historial de Activaciones</a>
+    <br /><br />
     <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
-</nav>
-    <div class="row">
+  </nav>
+  <div class="row">
     <table class="tabla-registros">
-        <h1>Registros de Familiares</h1>
-        <thead>
-            <tr>
-                <th>Nombres</th>
-                <th>Apellidos</th>
-                <th>Correo Electrónico</th>
-                <th>Telefono</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            {{#each lista}}
-                <tr>
-                    <td>{{nombres}}</td>
-                    <td>{{apellidos}}</td>
-                    <td>{{correo_electronico}}</td>
-                    <td>{{telefono}}</td>
-                    <td>
-                            <div class="contenedor-botones">
-    <a href="/registro_familiar/editar/{{id_registro_familiar}}"><button class="cancelar" type="button">Editar</button></a>
+      <h1>Registros de Familiares</h1>
+      <thead>
+        <tr>
+          <th>Nombres</th>
+          <th>Apellidos</th>
+          <th>Correo Electrónico</th>
+          <th>Telefono</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each lista}}
+          <tr>
+            <td>{{nombres}}</td>
+            <td>{{apellidos}}</td>
+            <td>{{correo_electronico}}</td>
+            <td>{{telefono}}</td>
+            <td>
+              <div class="contenedor-botones">
+                  <a href="/registro_familiar/editar/{{id_registro_familiar}}">
+                  <button class="cancelar" type="button">Editar</button>
+                  </a>
 
-<a  id="boton1" class="registrarse"  data-id="{{id_registro_familiar}}"><button type="button" style="background-color: red;" >Eliminar</button></a>
-
-
-       
-    </div>
-      <script src="/script/registro/eliminar.js"></script>              
-                    </td>
-                </tr>
-            {{/each}}
-        </tbody>
+                  <a id="boton1" class="registrarse" data-id="{{id_registro_familiar}}">
+                   <button type="button"style="background-color: red;">Eliminar</button>
+                  </a>
+              </div>
+              <script src="/script/registro/eliminar.js"></script>
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
     </table>
-</div>
-
-</div>
+  </div>
 
 </body>
