@@ -1,3 +1,4 @@
+// alerta del eliminar
 document.getElementById('boton1').onclick = function(event) {
     // Prevenir la acción predeterminada del enlace
     event.preventDefault();
@@ -10,6 +11,6 @@ document.getElementById('boton1').onclick = function(event) {
 
     if (confirmacion) {
         // Si el usuario hace clic en "Aceptar", redirigir a la URL de eliminación
-        window.location.href = '/registro_familiar/eliminar/' + id_mensaje_personalizado;
+        window.location.href = '/mensaje_personalizado/eliminar/' + id_mensaje_personalizado;
     }
 };
