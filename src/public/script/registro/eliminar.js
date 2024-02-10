@@ -1,10 +1,15 @@
-document.getElementById('boton1').onclick = function(){
+document.getElementById('boton1').onclick = function(event) {
+    // Prevenir la acción predeterminada del enlace
+    event.preventDefault();
+
+    // Obtener el ID del registro familiar desde el botón
+    var id_registro_familiar = this.getAttribute('data-id');
+
+
     var confirmacion = confirm('¿Estás seguro que quieres eliminar el registro? Presiona "Aceptar" para eliminar o "Cancelar" para no hacerlo.');
+
     if (confirmacion) {
-        // Aquí puedes poner la lógica para eliminar el registro
-        alert('Registro eliminado');
-    } else {
-        // Aquí puedes poner la lógica para cancelar la eliminación
-        alert('Eliminación cancelada');
+        // Si el usuario hace clic en "Aceptar", redirigir a la URL de eliminación
+        window.location.href = '/registro_familiar/eliminar/' + id_registro_familiar;
     }
-}
+};
