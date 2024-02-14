@@ -12,6 +12,7 @@ body {
   left: 0;
   top: 0;
   bottom: 0;
+  transition: left 0.5s; /* Para el Nav en Responsive */
 }
 
 #sidebar a {
@@ -167,16 +168,6 @@ h4 {
     color: #fff;
   }
 
-
-
-
-
-
-
-
-
-
-
   .logo-container {
     display: flex;
     align-items: center;
@@ -193,4 +184,27 @@ h4 {
     width: 70px;
     height: 70px; 
     margin-left: 10px; 
+  }
+
+
+    /* Consulta de medios para pantallas Verticales que 768px */
+    @media only screen and (max-width: 768px) {
+      #sidebar {
+          left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
+          transition: left 0.5s; /* Para el Nav en Responsive */
+      }
+  
+      #sidebar.show {
+          left: 0; /* Muestra la barra lateral */
+      }
+  
+      .menu-toggle {
+          display: block; /* Hace que el boton sea visible */ 
+          cursor: pointer;
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          z-index: 2;
+          font-size: 20px;   /* Tamaño del Boton */
+      }
   }

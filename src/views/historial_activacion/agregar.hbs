@@ -3,8 +3,13 @@
 <form action="/historial_activacion/agregar" method="post">
 
     <body>
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+         {{!--<input type="checkbox" id="menu-toggle" class="menu-toggle"> --}}
+          {{!-- <label for="menu-toggle" class="menu-icon">&#9776;</label> --}}
+ 
+      {{!-- Para el Nav en Responsive  --}}
+     <script src="/script/registro/nav.js"></script>
+     <div class="menu-toggle">&#9776;</div>
+     {{!-- Funcional --}}
 
         <nav id="sidebar">
             <a href="/inicio">

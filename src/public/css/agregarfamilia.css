@@ -12,7 +12,14 @@ body {
     left: 0;
     top: 0;
     bottom: 0;
+    transition: left 0.5s; /* Para el Nav en Responsive */
+    
 }
+
+.menu-toggle {
+    display: none;
+}
+
 
 #sidebar a {
     color: black;
@@ -141,3 +148,27 @@ button {
     height: 70px; /* Ajusta el tamaño según tu preferencia */
     margin-left: 10px; /* Espacio entre el logo y el borde derecho del contenedor */
   }
+
+
+
+  /* Consulta de medios para pantallas Verticales que 768px */
+  @media only screen and (max-width: 768px) {
+    #sidebar {
+        left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
+        transition: left 0.5s; /* Para la transición */
+    }
+
+    #sidebar.show {
+        left: 0; /* Muestra la barra lateral */
+    }
+
+    .menu-toggle {
+        display: block;  /* Hace que el boton sea visible */
+        cursor: pointer; 
+        position: fixed;
+        top: 10px;  
+        left: 10px;
+        z-index: 2;
+        font-size: 20px;   /* Tamaño del Boton */
+    }
+}
