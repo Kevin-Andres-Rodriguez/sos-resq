@@ -167,22 +167,37 @@ h4 {
 
     /* Consulta de medios para pantallas Verticales que 768px */
     @media only screen and (max-width: 768px) {
+        /* Nav */
         #sidebar {
-            left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
-            transition: left 0.5s; /* Para el Nav en Responsive */
+          left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
+          transition: left 0.5s; /* Para la transición */
         }
-    
+      
         #sidebar.show {
-            left: 0; /* Muestra la barra lateral */
+          left: 0; /* Muestra la barra lateral */
         }
-    
+      
         .menu-toggle {
-            display: block; /* Hace que el boton sea visible */
-            cursor: pointer;
-            position: fixed;
-            top: 10px;
-            left: 10px;
-            z-index: 2;
-            font-size: 20px;   /* Tamaño del Boton */
+          display: block; /* Hace que el boton sea visible */
+          cursor: pointer;
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          z-index: 2;
+          font-size: 35px; /* Tamaño del Boton */
         }
-    }
+      
+        /* LOGO */
+      
+        .logo-container {
+          justify-content: center; /* Centra el contenido en pantallas más pequeñas */
+        }
+      
+        .logo {
+          width: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+          height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+          margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+        }
+      
+      
+      }

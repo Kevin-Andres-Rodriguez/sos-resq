@@ -1,174 +1,187 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #sidebar {
-    width: 250px;
-    background-color: #f8f9fa;
-    color: black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    transition: left 0.5s; /* Para el Nav en Responsive */
-    
+  width: 250px;
+  background-color: #f8f9fa;
+  color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: left 0.5s; /* Para el Nav en Responsive */
 }
 
 .menu-toggle {
-    display: none;
+  display: none;
 }
-
 
 #sidebar a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    font-size: 17px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 17px;
 }
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
 #sidebar a:hover {
-    background-color: #6ddef1;
+  background-color: #6ddef1;
 }
 
 .main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .menu-toggle {
-    display: none;
+  display: none;
 }
-
 
 .textos {
-    color: #109cf1;
-    font-size: 24px;
-    border-bottom: 1px solid purple; 
-    padding-bottom: 2px; 
-   border-bottom-width: 2.5px; 
+  color: #109cf1;
+  font-size: 24px;
+  border-bottom: 1px solid purple;
+  padding-bottom: 2px;
+  border-bottom-width: 2.5px;
 }
 .underline-text {
-    text-align: center;
-    border-bottom: 1px solid black; 
-    padding-bottom: 2px; 
-    border-bottom-width: 2.5px; 
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
+  border-bottom-width: 2.5px;
 }
 
 .menu-item img {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: -10px;
 }
 
 .user-info h3 {
-    margin-top: -3px;
-    margin-left: 100px;
-  }
-  
-  h4 {
-      margin-top: -10px;
-      margin-left: 40px;
-      color: gray;
-  }
+  margin-top: -3px;
+  margin-left: 100px;
+}
 
+h4 {
+  margin-top: -10px;
+  margin-left: 40px;
+  color: gray;
+}
 
-  /*  TABKA */
+/*  TABKA */
 
 .crud-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: -20px;
-    margin-left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: -20px;
+  margin-left: 100px;
 }
 
 .crud-content {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    border-radius: 20px;
+  display: block;
+  margin-bottom: 8px;
+  border-radius: 20px;
 }
 
 input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-    border-radius: 20px;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
 }
 
 button {
-    background-color: #2563EB;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 50%;
-    margin-left: 70px;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 70px;
 }
 
-
-
-
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
-    padding: 10px; /* Ajusta el espaciado según tu preferencia */
-    background-color: #f8f9fa; /* Ajusta el color de fondo según tu diseño */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alinea el contenido a la derecha */
+  padding: 10px; /* Ajusta el espaciado según tu preferencia */
+  background-color: #f8f9fa; /* Ajusta el color de fondo según tu diseño */
+  position: fixed;
+  top: 0;
+  right: 0; /* Alinea el contenedor a la parte superior derecha */
+  z-index: 999; /* Asegura que esté en la parte superior */
+}
+
+.logo {
+  width: 70px; /* Ajusta el tamaño según tu preferencia */
+  height: 70px; /* Ajusta el tamaño según tu preferencia */
+  margin-left: 10px; /* Espacio entre el logo y el borde derecho del contenedor */
+}
+
+/* Consulta de medios para pantallas Verticales que 768px */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  #sidebar {
+    left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
+    transition: left 0.5s; /* Para la transición */
+  }
+
+  #sidebar.show {
+    left: 0; /* Muestra la barra lateral */
+  }
+
+  .menu-toggle {
+    display: block; /* Hace que el boton sea visible */
+    cursor: pointer;
     position: fixed;
-    top: 0;
-    right: 0; /* Alinea el contenedor a la parte superior derecha */
-    z-index: 999; /* Asegura que esté en la parte superior */
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+    font-size: 35px; /* Tamaño del Boton */
   }
-  
+
+  /* LOGO */
+
+  .logo-container {
+    justify-content: center; /* Centra el contenido en pantallas más pequeñas */
+  }
+
   .logo {
-    width: 70px; /* Ajusta el tamaño según tu preferencia */
-    height: 70px; /* Ajusta el tamaño según tu preferencia */
-    margin-left: 10px; /* Espacio entre el logo y el borde derecho del contenedor */
+    width: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+    height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
   }
 
+  /* Formulado (Crud) */
 
-
-  /* Consulta de medios para pantallas Verticales que 768px */
-  @media only screen and (max-width: 768px) {
-    #sidebar {
-        left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
-        transition: left 0.5s; /* Para la transición */
-    }
-
-    #sidebar.show {
-        left: 0; /* Muestra la barra lateral */
-    }
-
-    .menu-toggle {
-        display: block;  /* Hace que el boton sea visible */
-        cursor: pointer; 
-        position: fixed;
-        top: 10px;  
-        left: 10px;
-        z-index: 2;
-        font-size: 20px;   /* Tamaño del Boton */
-    }
+  .crud-content {
+    width: 100%;
+    margin: 45%; /* Ajustar el margen para la responsividad */
+    padding: 10px; /* Ajustar el relleno para la responsividad */
+    margin-left: 30px;
+  }
 }
