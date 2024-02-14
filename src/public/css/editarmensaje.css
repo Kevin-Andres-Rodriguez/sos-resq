@@ -76,14 +76,12 @@ body {
 
 /* --------------------solo tabla------------------------------------*/
 
-.contenedor {
-  margin: 20px;
-}
+
 
 table {
   width: 950px;
   border-collapse: collapse;
-  margin-top: -20px;
+  margin-top: 10px;
   margin-left: 270px;
 }
 
@@ -100,8 +98,37 @@ th {
 h1 {
   text-align: center;
   margin-bottom: 20px;
-
 }
+
+.subir {
+  padding: 100px;
+  margin-left: 100px;
+  margin-top: -100px;
+}
+
+.contenedor-botones {
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center; /* Centro los botones en el contenedor */
+margin-top: 12px;
+}
+
+
+.subir {
+    padding: 100px;
+    margin-left: 100px;
+    margin-top: -100px;
+}
+
+.contenedor-botones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center; /* Centro los botones en el contenedor */
+  margin-top: 12px;
+}
+
 
 .subir {
   padding: 100px;
@@ -195,6 +222,44 @@ h4 {
       height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
       margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
     }
-  
-  
+
+      /* Tabla */
+
+      .subir {
+        display: flex; /* Usa un contenedor flexible para alinear en línea horizontal */
+        align-items: center; /* Centra verticalmente en el contenedor */
+        margin-top: -10px;
+        font-size: 20px;
+        margin-left: 0px;
+      }
+  .table-container {
+    overflow-x: auto; /* Hace que la tabla sea deslizable horizontalmente */
+    max-width: 100%; /* Ajusta el ancho máximo para asegurar el deslizamiento */
+    margin-top: -25%;
+    width: 93%;
+    margin-left: 15px;
+  }
+
+  table {
+    width: 100%; /* Hace que la tabla sea 100% ancha en pantallas más pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    font-size: 15px; /* Establece el tamaño de letra */
+  }
+
+  th, td {
+    padding: 0.5vw; /* Ajusta el relleno en unidades relativas para pantallas más pequeñas */
+  }
+
+
+
+  button {
+    width: 50px;
+    padding: 6px;
+    margin-right: 3px;
+    height: 20px;
+    font-size: 10px;
+
+}
+
   }

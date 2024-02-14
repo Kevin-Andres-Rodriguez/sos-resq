@@ -87,6 +87,7 @@ body {
 
 .contenedor {
     margin: 20px;
+
 }
 
 table {
@@ -118,8 +119,11 @@ h1 {
 }
 
 .contenedor-botones {
-    display: flex;
-    margin-top: 20px; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center; /* Centro los botones en el contenedor */
+  margin-top: 12px;
 }
 
 button {
@@ -133,6 +137,7 @@ button {
     margin-right: 10px;
     height: 30px;
     margin-top: -15px;
+    text-align: center; /* Centro los botones en el contenedor */
 }
 
 button:hover {
@@ -203,5 +208,43 @@ h4 {
           margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
         }
       
+  /* Tabla */
+
+  .titulo {
+    margin-top: 100px;
+    font-size: 10px;
+
+  }
+  .table-container {
+    overflow-x: auto; /* Hace que la tabla sea deslizable horizontalmente */
+    max-width: 100%; /* Ajusta el ancho máximo para asegurar el deslizamiento */
+    margin-top: 10%;
+    width: 93%;
+    margin-left: 15px;
+  }
+
+  table {
+    width: 100%; /* Hace que la tabla sea 100% ancha en pantallas más pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    font-size: 15px; /* Establece el tamaño de letra */
+  }
+
+  th, td {
+    padding: 0.5vw; /* Ajusta el relleno en unidades relativas para pantallas más pequeñas */
+  }
+
+
+
+  button {
+    width: 50px;
+    padding: 6px;
+    margin-right: 3px;
+    height: 20px;
+    font-size: 11px;
+    margin-top: -10px;
+}
+
+
       
-      }
+  }
