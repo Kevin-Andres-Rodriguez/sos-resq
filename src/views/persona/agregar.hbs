@@ -1,4 +1,4 @@
-{{!-- Funcional --}}
+                                                                                                                     {{!-- Funcional --}}
 <link rel="stylesheet" href="/css/agregarpersona.css">
 <form action="/persona/agregar" method="post">
 
@@ -8,28 +8,28 @@
         <div class="content">
             <div class="form-container">
                 <div class="mb-3">
-                    <label id="nombre" for="nombres">Nombres</label> <br>
+                    <label class="nombre" for="nombres">Nombres</label> 
                     <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-                    <label id="apellido" for="apellidos">Apellidos</label> <br>
+<br>
+                    <label id="apellido" for="apellidos">Apellidos</label> 
                     <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-                    <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha Nacimiento</label> <br>
+<br>
+                    <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha Nacimiento</label> 
                     <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Fecha de nacimiento" required>
-
-                    <label id="sexs" for="sex">Sexo</label> <br>
+<br>
+                    <label id="sexs" for="sex">Sexo</label> 
                     <select class="form-control" id="sex" name="sex" required>
                     <option value="masculino" name="sex">Masculino</option>
                     <option value="femenino" name="sex">Femenino</option>
                     </select>
-
-                    <label id="direcciones" for="direccion">Dirección</label> <br>
+<br>
+                    <label id="direcciones" for="direccion">Dirección</label> 
                     <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
-
-                    <label id="correo_electronicos" for="correo_persona">Correo Electrónico</label> <br>
+<br>
+                    <label id="correo_electronicos" for="correo_persona">Correo Electrónico</label> 
                     <input type="email" class="form-control" id="correo_persona" name="correo_persona" placeholder="Correo electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
-
-                    <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
+<br>
+                    <label id="numero_persona" for="numero_persona">Telefono:</label> 
                     <input type="tel" class="form-control" id="numero_persona" name="numero_persona" placeholder="Telefono" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
 
                     <br> <br><br>
