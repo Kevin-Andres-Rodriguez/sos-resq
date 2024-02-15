@@ -85,7 +85,7 @@ table {
     height: 90px;
     border-collapse: collapse;
     margin-top: 50px;
-    margin-left: 270px;
+    margin-left: 300px;
     font-size: 12px;
 }
 
@@ -129,7 +129,7 @@ button {
     cursor: pointer;
     margin-right: 10px;
     height: 30px;
-    margin-top: -15px;
+    margin-top: 5px;
 }
 
 button:hover {

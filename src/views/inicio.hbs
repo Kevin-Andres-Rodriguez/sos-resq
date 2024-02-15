@@ -1,43 +1,48 @@
-
 <link rel="stylesheet" href="/css/inicio.css">
-<form action="/inicio"method="POST">
-<body>
+<form action="/inicio" method="POST">
 
-     {{!-- Para el Nav en Responsive  --}}
-     <script src="/script/registro/nav.js"></script>
-     <div class="menu-toggle">&#9776;</div>
-     {{!-- Funcional --}}
-    
-  <nav id="sidebar">
-    <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
-    <div class="user-info">
-        <h3>Camila</h3>
-        <h4>camila@example.com</h4>
-    </div>
-   {{!--  <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user" ></i> Usuario</a> --}}
-    <a href="" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users" ></i> Registro Familiares</a>
-    <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"  ></i> Datos Guardados</a>
-    <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope" ></i> Mensaje de Notificación</a>
-    <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="" class="menu-item"><i class="fas fa-history" ></i> Historial</a>
-    <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de Activaciones</a>
-    <br><br>
-    <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
-</nav>
-<div class="logo-container">
-        <img src="/img/logo.jpeg" class="logo" alt="Logo">
-    </div>
-    <div class="textoss">
-     <h1>SOS RESQ</h1>
-     </div>
-    <h7 class="loca">Localizacion en cualquier lugar</h7>
-    <h8 class="cuando">Cuando pulses en el enlace de tu mensaje,te avisará de su ubicación.</h8>
-    <img src="/img/mapa.png" class="mapa">
-    <h8 class="dis">Todos los dispositivos</h8>
-    <h9  class="visua">Visualizacion de tu Historial de Hubicacion</h9>
-    <img src="/img/cpu.png" class="cpu">
-    <img src="/img/mapita.png" class="mapita">
+    <body>
 
-</body>
+        {{!-- Para el Nav en Responsive --}}
+        <script src="/script/registro/nav.js"></script>
+        <div class="menu-toggle">&#9776;</div>
+        {{!-- Funcional --}}
+
+        <nav id="sidebar">
+            <a href="/inicio">
+                <h1 class="textos">SOS RESQ</h1>
+            </a>
+            <div class="user-info">
+                <h3>Camila</h3>
+                <h4>camila@example.com</h4>
+            </div>
+            {{!-- <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user"></i> Usuario</a> --}}
+            <a href="" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users"></i> Registro Familiares</a>
+            <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope"></i> Mensaje de
+                Notificación</a>
+            <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="" class="menu-item"><i class="fas fa-history"></i> Historial</a>
+            <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de
+                Activaciones</a>
+            <br><br>
+            <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+        </nav>
+        <div class="logo-container">
+            <img src="/img/logo.jpeg" class="logo" alt="Logo">
+        </div>
+        <div class="container">
+            <div class="textoss">
+                <h1>SOS RESQ</h1>
+            </div>
+            <div class="loca"><h7 >Localizacion en cualquier lugar</h7></div>
+            <div class="cuando"><h8 >Cuando pulses en el enlace de tu mensaje,te avisará de su ubicación.</h8></div>
+            <div ><img src="/img/mapa.png" class="mapa"></div>
+            <div class="dis"><h8 >Todos los dispositivos</h8></div>
+            <div class="visua"><h9 >Visualizacion de tu Historial de Hubicacion</h9></div>
+            <div ><img src="/img/cpu.png" class="cpu"></div>
+            <div ><img src="/img/mapita.png" class="mapita"></div>
+        </div>
+    </body>
 </form>

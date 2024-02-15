@@ -72,9 +72,8 @@ body {
 }
 
 
-
 /* --------------------solo tabla------------------------------------*/
-
+    
 .contenedor {
     margin: 20px;
     font-size: 13px;
@@ -83,12 +82,15 @@ body {
     display: flex;
     margin-top: 20px; 
 }
+.contenedor-botones button {
+    margin-right: 14px; 
+}
 
 table {
     width: 950px;
     border-collapse: collapse;
-    margin-top: -90px;
-    margin-left: 270px;
+    margin-top: -80px;
+    margin-left: 330px;
     font-size: 12px;
 }
 
@@ -110,7 +112,7 @@ h1 {
 .subir {
     padding: 100px;
     margin-left: 100px;
-    margin-top: -100px;
+    margin-top: -50px;
 }
 
 button {

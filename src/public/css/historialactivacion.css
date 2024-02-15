@@ -87,31 +87,36 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 13%;
 }
 
 .container {
     width: 70%;
     margin: auto;
-    margin-top: 40px;
-    margin-left: 22%;
-    font-size: 13px;
+    margin-top: 80px;
+    margin-left: 23%;
+    font-size: 13px;    
 }
 
 .row {
     display: flex;
     border-bottom: 1px solid #ddd;
+
 }
 
 .row.header {
     font-weight: bold;
     background-color: #f2f2f2;
+    margin: 0; 
 }
 
 .column {
     flex: 1;
-    padding: 10px;
+    padding: 5px; /* Reducimos el relleno */
+    border: 0.3px solid gray;
+    margin: -1px; 
+    font-size: 14px; 
 }
 
 @media screen and (max-width: 600px) {
