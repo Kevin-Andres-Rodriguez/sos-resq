@@ -1,19 +1,14 @@
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: -500px;
-    margin-left: 600px
-}
-
 .column {
-    flex: 0 0 50% ;
-    margin-top: 28px;
+    max-width: 300px;
+    margin-top: -500px;
+    margin-left: 650px;
     /* Ajusta según sea necesario, dejando un pequeño espacio entre columnas */
 }
 .column1{
-    margin-top: 20px;
-    flex: 0 0 50%;
+    margin-top: -220px;
+    max-width: 300px;
     padding: 6px;
+    margin-left: 990px;
 }
 
 .img3 {
@@ -45,33 +40,6 @@ label {
     background-color: #dadbdd69;
 }
 
-.form-container {
-    width: 800px;
-    /* Ajusta según sea necesario */
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    background-color: #a7a7a753;
-    margin-left: 50px;
-    margin-top: -87px;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding: -50px;
-    margin-top: -500px;
-    margin-right: 100px;
-}
-
-.form-container img {
-    max-width: 100px;
-    margin-left: 20px;
-    /* Cambié margin-right a margin-left */
-    order: 2;
-    /* Cambié el orden de la imagen */
-}
 
 .login {
     position: absolute;
@@ -93,4 +61,60 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0px; /* Ajusta según sea necesario */
+      margin-right: 20px; /* Ajusta según sea necesario */
+      margin-top: 10px;
+    }
+  
+    .column {
+        max-width: 400px; /* Permitir que las columnas ocupen todo el ancho en pantallas más pequeñas */
+        margin-top: 10px;
+        margin-left: 0px;
+
+    }
+    .column1 {
+        max-width: 400px; /* Permitir que las columnas ocupen todo el ancho en pantallas más pequeñas */
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+  
+    .img3 {
+      max-width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    h1 {
+        position: static;
+        text-align: center;
+        margin: 10px 0; /* Ajusta según sea necesario */
+    }
+
+    .login {
+        position: absolute;
+        top: 155%;
+        right: 45%; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+    
+    .atras {
+        position: absolute;
+        top: 155%;
+        right: 80px; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+
+  
+    .form-control {
+      width: 100%; /* Hace que los campos de entrada ocupen todo el ancho dentro de las columnas */
+      box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
+      margin-bottom: 10px; /* Ajusta según sea necesario */
+    }
 }
