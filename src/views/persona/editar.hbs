@@ -3,74 +3,87 @@
 <form action="/persona/actualizar/{{id_persona}}/{{id_detalle_persona}}" method="post">
 
     <body>
-     {{!-- Para el Nav en Responsive  --}}
-     <script src="/script/registro/nav.js"></script>
-     <div class="menu-toggle">&#9776;</div>
-     {{!-- Funcional --}}
-         <nav id="sidebar">
-    <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
-    <div class="user-info">
-        <h3>Camila</h3>
-        <h4>camila@example.com</h4>
-    </div>
-   {{!--  <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user" ></i> Usuario</a> --}}
-    <a href="" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users" ></i> Registro Familiares</a>
-    <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"  ></i> Datos Guardados</a>
-    <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope" ></i> Mensaje de Notificación</a>
-    <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="" class="menu-item"><i class="fas fa-history" ></i> Historial</a>
-    <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de Activaciones</a>
-    <br><br>
-    <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
-</nav>
+        {{!-- Para el Nav en Responsive --}}
+        <script src="/script/registro/nav.js"></script>
+        <div class="menu-toggle">&#9776;</div>
+        {{!-- Funcional --}}
 
+        <div class="logo-container">
+            <img src="/img/logo.jpeg" class="logo" alt="Logo" />
+        </div>
 
+        <nav id="sidebar">
+            <a href="/inicio">
+                <h1 class="textos">SOS RESQ</h1>
+            </a>
+            <div class="user-info">
+                <h3>Camila</h3>
+                <h4>camila@example.com</h4>
+            </div>
+            {{!-- <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user"></i> Usuario</a> --}}
+            <a href="" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users"></i> Registro Familiares</a>
+            <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope"></i> Mensaje de
+                Notificación</a>
+            <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
+            <a href="" class="menu-item"><i class="fas fa-history"></i> Historial</a>
+            <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de
+                Activaciones</a>
+            <br><br>
+            <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+        </nav>
         <div class="crud-container">
             <div class="crud-content">
-                <h2>Actualización de Persona</h2>
-
-                <label id="nombre" for="nombres">Nombres</label> <br>
-                <input type="text" id="nombres" name="nombres" value="{{nombres}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+"
-                    title="Solo se permiten letras y espacios" required>
-
-                <label id="apellido" for="apellidos">Apellidos</label> <br>
-                <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}"
-                    pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-                <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha de Nacimiento</label> <br>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="{{fecha_nacimiento}}" required>
-
-                <label id="sexs" for="sex">Sexo</label> <br>
-                <select class="form-control" id="sex" name="sex" required>
-                    <option value="masculino" name="sex">Masculino</option>
-                    <option value="femenino" name="sex">Femenino</option>
-                </select>
-
-                <label id="direcciones" for="direccion">Direccion</label> <br>
-                <input type="text" id="direccion" name="direccion" value="{{direccion}}" required>
-
-                <label id="correo_persona" for="correo_persona">Correo Electronico</label> <br>
-                <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}"
-                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
-
-                <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
-                <input type="text" id="numero_persona" name="numero_persona" value="{{numero_persona}}"
-                    pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10"
-                    required>
-
-                <br> <br><br>
-                <br> <br>
-
-
-                <button class="login" style="background-color: red;" type="submit">cancelar</button>
-
-                <div class="atras">
-                    <button type="submit">Actualizar</button>
+                <div class="actualizacion-objeto">
+                    <h2>Actualización de Personas</h2>
                 </div>
+                <div class="left-section">
+                    <label id="nombre" for="nombres">Nombres</label> <br>
+                    <input type="text" id="nombres" name="nombres" value="{{nombres}}"
+                        pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
+
+                    <label id="apellido" for="apellidos">Apellidos</label> <br>
+                    <input type="text" id="apellidos" name="apellidos" value="{{apellidos}}"
+                        pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
+
+                    <label id="fecha_nacimientos" for="fecha_nacimiento">Fecha de Nacimiento</label> <br>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="{{fecha_nacimiento}}"
+                        required>
+
+                    <label id="sexs" for="sex">Sexo</label> <br>
+                    <select class="form-control" id="sex" name="sex" required>
+                        <option value="masculino" name="sex">Masculino</option>
+                        <option value="femenino" name="sex">Femenino</option>
+                    </select>
+                </div>
+                <div class="right-section">
+                    <label id="direcciones" for="direccion">Direccion</label> <br>
+                    <input type="text" id="direccion" name="direccion" value="{{direccion}}" required>
+
+                    <label id="correo_persona" for="correo_persona">Correo Electronico</label> <br>
+                    <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}"
+                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido"
+                        required>
+
+                    <label id="numero_persona" for="numero_persona">Telefono:</label> <br>
+                    <input type="text" id="numero_persona" name="numero_persona" value="{{numero_persona}}"
+                        pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10"
+                        required>
+
+                    <br> <br><br>
+                    <br> <br>
+
+                </div>
+                <div class="button-section">
+                    <button class="login" style="background-color: red;" type="submit">Cancelar</button>
+                    <div class="atras">
+                        <button type="submit">Actualizar</button>
+                    </div>
+                </div>
+
+
             </div>
-        </div>
-        </div>
 </form>
 {{/each}}
 
