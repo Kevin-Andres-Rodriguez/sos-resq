@@ -100,7 +100,7 @@ body{
         height: auto;
         padding: 20px;
         text-align: center;
-        margin-top: 20px;
+        margin-top: -30px;
         margin-left: -16%;
         margin-bottom: 20px; /* Añadido margen inferior para separar verticalmente */
     }
@@ -110,7 +110,7 @@ body{
         height: auto;
         padding: 20px;
         text-align: center;
-        margin-top: 450px;
+        margin-top: 420px;
         margin-left: -22%;
         margin-bottom: 20px; /* Añadido margen inferior para separar verticalmente */
     }
@@ -120,7 +120,7 @@ body{
         height: auto;
         padding: 20px;
         text-align: center;
-        margin-top: 885px;
+        margin-top: 870px;
         margin-left: -51%;
         margin-bottom: 20px; /* Añadido margen inferior para separar verticalmente */
     }
