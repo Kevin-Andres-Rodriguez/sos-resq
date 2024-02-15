@@ -118,3 +118,80 @@ button {
       margin-bottom: 10px; /* Ajusta según sea necesario */
     }
 }
+
+@media only screen and (min-width: 414px) and  (max-height: 896px) {
+
+    .login {
+        position: absolute;
+        top: 120%;
+        right: 45%; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+    
+    .atras {
+        position: absolute;
+        top: 120%;
+        right: 100px; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+
+}
+
+
+@media only screen and (min-width: 390px) and  (max-height: 844px) {
+
+    .login {
+        position: absolute;
+        top: 125%;
+        right: 45%; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+    
+    .atras {
+        position: absolute;
+        top: 125%;
+        right: 100px; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+
+}
+
+@media only screen and (min-width: 430px) and  (max-height: 932px) {
+
+    
+    .login {
+        position: absolute;
+        top: 120%;
+        right: 45%; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+    
+    .atras {
+        position: absolute;
+        top: 120%;
+        right: 100px; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+
+}
+
+
+@media only screen and (min-width: 412px) and  (max-height: 915px) {
+
+    
+    .login {
+        position: absolute;
+        top: 120%;
+        right: 45%; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+    
+    .atras {
+        position: absolute;
+        top: 120%;
+        right: 100px; /* Ajusta el valor de la derecha según sea necesario */
+        padding: 8px 15px;
+    }
+
+}
+
