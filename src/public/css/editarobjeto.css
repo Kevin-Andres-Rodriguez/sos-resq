@@ -210,4 +210,67 @@ button {
       font-size: 35px; /* Tamaño del Boton */
     }
 
+
+            /* LOGO */
+  
+            .logo-container {
+                justify-content: center; /* Centra el contenido en pantallas más pequeñas */
+              }
+            
+              .logo {
+                width: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+                height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+                margin-left: 10%; /* Elimina el margen izquierdo en pantallas más pequeñas */
+              }
+    
+    
+        
+    
+        /* Formulario */
+    
+        .actualizacion-objeto {
+            top: 70px; /* Ajusta la distancia desde la parte superior */
+            left: 60px; /* Ajusta la distancia desde la izquierda */
+            z-index: -100; /* Ajusta el índice z para asegurar que esté por encima del nav */
+        }
+    
+    
+        .crud-container {
+    
+            margin-left: -27px;
+            margin-top: 40%;
+    
+        }
+        
+        .crud-content {
+    
+            width: 85%;
+            flex-direction: column; 
+            height: auto; 
+    
+        }
+        
+        .left-section  {
+      
+            width: 90%; 
+            margin-left: 5%; 
+            margin-top: 5%;
+        }
+    
+        .right-section{
+            width: 90%; 
+            margin-left: 5%; 
+            margin-top: -18%;
+        }
+        
+        .button-section {
+    
+            flex-direction: column; 
+            align-items: center; 
+            margin-left: 0; 
+            margin-top: -1px; 
+        
+    
+        }
+
   }

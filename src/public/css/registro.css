@@ -105,3 +105,37 @@ p {
 .form-control {
     padding-right: 30px; /* Ajusta el espacio a la derecha del input para el icono */
 }
+
+
+
+@media only screen and (max-width: 768px) {
+    .imagen1 {
+        max-width: 100%;
+        height: auto;
+        margin-top: 100px;
+    }
+
+    .imagen2 {
+        max-width: 25%;
+        position: static;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .form-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .content {
+        margin-top: 30px;
+        margin-right: 0;
+        padding: 10px;
+    }
+
+    h3 {
+        text-align: center;
+        margin-top: 10px;
+        margin-right: 0;
+    }
+}
