@@ -71,27 +71,18 @@ body {
     margin-bottom: -10px;
 }
 
+/* TABLA  */
 
-/* --------------------solo tabla------------------------------------*/
-    
 .contenedor {
     margin: 20px;
     font-size: 13px;
 }
-.contenedor-botones {
-    display: flex;
-    margin-top: 20px; 
-}
-.contenedor-botones button {
-    margin-right: 14px; 
-}
 
 table {
-    width: 950px;
+    width: 1000px;
     border-collapse: collapse;
-    margin-top: -80px;
-    margin-left: 330px;
-    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 270px;
 }
 
 th, td {
@@ -107,24 +98,32 @@ th {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    margin-left: 15%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .subir {
     padding: 100px;
     margin-left: 100px;
-    margin-top: -50px;
+    margin-top: -100px;
+}
+
+.contenedor-botones {
+    display: flex;
+    margin-top: 20px; 
 }
 
 button {
     width: 70px;
+    padding: 10px;
     background-color: #109CF1;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-right: 10px;
     height: 30px;
     margin-top: -15px;
-
 }
 
 button:hover {
@@ -146,7 +145,7 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: flex-end; 
-    padding: 10px;
+    padding: 10px; 
     background-color: #f8f9fa; 
     position: fixed;
     top: 0;
@@ -157,7 +156,7 @@ h4 {
   .logo {
     width: 70px; 
     height: 70px; 
-    margin-left: 10px; 
+    margin-left: 10px;
   }
 
     /* Consulta de medios para pantallas Verticales que 768px */
@@ -194,5 +193,45 @@ h4 {
           margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
         }
       
+
+                /* Tabla */
+
+                .titulo {
+                    margin-top: 20%;
+                    margin-right: 8%;
+                  }
+      
+              .table-container {
+                overflow-x: auto; /* Hace que la tabla sea deslizable horizontalmente */
+                max-width: 100%; /* Ajusta el ancho máximo para asegurar el deslizamiento */
+                margin-top: 0%;
+                width: 93%;
+                margin-left: 6px;
+              }
+            
+              table {
+                width: 100%; /* Hace que la tabla sea 100% ancha en pantallas más pequeñas */
+                margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+                margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+                font-size: 15px; /* Establece el tamaño de letra */
+              }
+            
+              th, td {
+                padding: 0.5vw; /* Ajusta el relleno en unidades relativas para pantallas más pequeñas */
+              }
+            
+            
+            
+              button {
+                width: 50px;
+                padding: 6px;
+                margin-right: 3px;
+                height: 20px;
+                font-size: 10px;
+            
+            }
+          
+  
+  
       
       }

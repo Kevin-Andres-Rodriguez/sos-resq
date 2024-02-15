@@ -3,10 +3,10 @@
 
 <body>
 
-     {{!-- Para el Nav en Responsive  --}}
-     <script src="/script/registro/nav.js"></script>
-     <div class="menu-toggle">&#9776;</div>
-     {{!-- Funcional --}}
+    {{!-- Para el Nav en Responsive --}}
+    <script src="/script/registro/nav.js"></script>
+    <div class="menu-toggle">&#9776;</div>
+    {{!-- Funcional --}}
 
     <div class="logo-container">
         <img src="/img/logo.jpeg" class="logo" alt="Logo">
@@ -23,7 +23,7 @@
             <h3>Camila</h3>
             <h4>camila@example.com</h4>
         </div>
-        <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user"></i> Usuario</a>
+        {{!-- <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user"></i> Usuario</a> --}}
         <a href="" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
         <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users"></i> Registro Familiares</a>
         <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"></i> Datos Guardados</a>
@@ -37,53 +37,67 @@
         <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
     </nav>
 
-    <h1 class="subir">Lista de objetos</h1>
-    <div id="contenedor">
-        <table>
-            <thead>
-                <tr>
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Numero de serie</th>
-                    <th>Numero de contacto</th>
-                    <th>Correo electronico</th>
-                    <th>Fecha de perdida</th>
-                    <th>Hora de perdida</th>
-                    <th>Ubicación de perdida</th>
-                    <th>Color</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                {{#each lista}}
-                <tr>
-                    <td>{{marca}}</td>
-                    <td>{{modelo}}</td>
-                    <td>{{numero_serie}}</td>
-                    <td>{{numero_contacto}}</td>
-                    <td>{{correo_objeto}}</td>
-                    <td>{{fecha_perdida}}</td>
-                    <td>{{hora_perdida}}</td>
-                    <td>{{ubicacion_perdida}}</td>
-                    <td>{{color}}</td>
-                    <td>
+    <div class="table-container">
+        <div class="titulo">
+            <h1>Listado Objeto</h1>
+        </div>
 
-                        <div class="contenedor-botones">
-                            <a href="/objeto/editar/{{id_objeto}}">
-                                <button type="button" class="atras" style="background-color: #0a88d8;">editar</button>
-                            </a>
 
-                            <a class="botonEliminar" data-id="{{id_objeto}}">
-                                <button type="button" style="background-color: red;">Eliminar</button>
-                            </a>
-                        </div>
-                        <script src="/script/registro/eliminarobjeto.js"></script>
-                    </td>
-                </tr>
-                {{/each}}
-            </tbody>
-        </table>
-    </div>
+        <div class="">
+            <div class="contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Modelo</th>
+                            <th>Numero de serie</th>
+                            <th>Numero de contacto</th>
+                            <th>Correo electronico</th>
+                            <th>Fecha de perdida</th>
+                            <th>Hora de perdida</th>
+                            <th>Ubicación de perdida</th>
+                            <th>Color</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each lista}}
+                        <tr>
+                            <td>{{marca}}</td>
+                            <td>{{modelo}}</td>
+                            <td>{{numero_serie}}</td>
+                            <td>{{numero_contacto}}</td>
+                            <td>{{correo_objeto}}</td>
+                            <td>{{fecha_perdida}}</td>
+                            <td>{{hora_perdida}}</td>
+                            <td>{{ubicacion_perdida}}</td>
+                            <td>{{color}}</td>
+                            <td>
+                                <div class="contenedor-botones">
+                                    <a href="/objeto/editar/{{id_objeto}}">
+                                        <button class="cancelar" type="button">Editar</button>
+                                    </a>
 
-</body>     
-    
+                                    <a class="botonEliminar" data-id="{{id_objeto}}">
+                                        <button style="background-color: red;" type="button">Eliminar</button>
+                                    </a>
+
+
+                                </div>
+                                <script src="/script/registro/eliminarobjeto.js"></script>
+                            </td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+</body>
