@@ -5,6 +5,8 @@
     transform: translate(-80%, .20%);
     width: 100px;
 }
+
+
 .boton{
     position: absolute;
     top: 55%;
@@ -17,6 +19,17 @@
     transform: translate(-80%, .20%);
     width: 100px;
 }
+
+#mostrarContrasenaIcono {
+    cursor: pointer;
+    position: absolute;
+    top: 48%; /* Adjust the top position as needed */
+    right: -50%; /* Adjust the right position as needed */
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+
 
 .login{
     position: absolute;
@@ -135,3 +148,63 @@ label {
     top: -11px;
     left: 160px;
 }
+
+@media only screen and (max-width: 768px) {
+    .formulario {
+        position: static;
+        margin: 50% auto; /* Aumentado el margen para centrarlo mejor */
+        transform: translate(0%, 0%);
+        margin-right: 52%;
+        top: 80px; /* Aumentado el valor top para mover el formulario más abajo */
+
+    }
+
+    .contraseña {
+        position: static;
+        margin-top: -130px;
+        margin-left: 43%;
+    }
+
+    #mostrarContrasenaIcono {
+        font-size: 14px; /* Ajusta el tamaño de la fuente del ícono en pantallas más pequeñas */
+    }
+
+    .boton {
+        position: static;
+        margin-left: 35%;
+        margin-top: 10px;
+    }
+
+
+
+    .login {
+        position: static;
+        top: auto;
+        margin-top: 20px;
+        right: auto;
+        transform: translate(0%, 0%);
+        width: auto;
+        margin-top: 10px;
+    }
+
+    h2, h4 {
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .imagen1 {
+        max-width: 100%;
+        height: auto;
+        margin: 10px auto;
+    }
+
+    .imagen2 {
+        top: auto;
+        right: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 20px;
+    }
+}
+
+
