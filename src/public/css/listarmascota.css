@@ -193,5 +193,45 @@ h4 {
           margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
         }
       
+
+                /* Tabla */
+
+                .titulo {
+                    margin-top: 20%;
+                    margin-right: 8%;
+                  }
+      
+              .table-container {
+                overflow-x: auto; /* Hace que la tabla sea deslizable horizontalmente */
+                max-width: 100%; /* Ajusta el ancho máximo para asegurar el deslizamiento */
+                margin-top: 0%;
+                width: 93%;
+                margin-left: 6px;
+              }
+            
+              table {
+                width: 100%; /* Hace que la tabla sea 100% ancha en pantallas más pequeñas */
+                margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+                margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+                font-size: 15px; /* Establece el tamaño de letra */
+              }
+            
+              th, td {
+                padding: 0.5vw; /* Ajusta el relleno en unidades relativas para pantallas más pequeñas */
+              }
+            
+            
+            
+              button {
+                width: 50px;
+                padding: 6px;
+                margin-right: 3px;
+                height: 20px;
+                font-size: 10px;
+            
+            }
+          
+  
+  
       
       }
