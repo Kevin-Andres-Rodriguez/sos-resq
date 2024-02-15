@@ -1,85 +1,93 @@
 <link rel="stylesheet" href="/css/editarmascota.css">
 {{#each lista}}
 <form action="/mascota/actualizar/{{id_mascota}}/{{id_detalle_mascota}}" method="post">
-
-
-
-  <body>
-     {{!-- Para el Nav en Responsive  --}}
-     <script src="/script/registro/nav.js"></script>
-     <div class="menu-toggle">&#9776;</div>
-     {{!-- Funcional --}}
-
-     <nav id="sidebar">
-    <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
-    <div class="user-info">
-        <h3>Camila</h3>
-        <h4>camila@example.com</h4>
+ <body>
+      {{!-- Para el Nav en Responsive  --}}
+      <script src="/script/registro/nav.js"></script>
+      <div class="menu-toggle">&#9776;</div>
+       <div class="logo-container">
+        <img src="/img/logo.jpeg" class="logo" alt="Logo">
     </div>
-    {{!--  <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user" ></i> Usuario</a> --}}
-   
-    <a href="" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users" ></i> Registro Familiares</a>
-    <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"  ></i> Datos Guardados</a>
-    <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope" ></i> Mensaje de Notificación</a>
-    <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
-    <a href="" class="menu-item"><i class="fas fa-history" ></i> Historial</a>
-    <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de Activaciones</a>
-    <br><br>
-    <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
-</nav>
-    <div class="crud-container">
-      <div class="crud-content">
-        <h2>Actualización de mascota</h2>
+      {{!-- Funcional --}}
 
-        <label id="pet" for="mascota">Nombres:</label> <br>
-        <input type="text" id="mascota" name="nombre_mascota" value="{{nombre_mascota}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-        <label id="species" for="especie">Especie:</label> <br>
-        <input type="text" id="especie" name="especie" value="{{especie}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-        <label id="race" for="raza">Raza:</label> <br>
-        <input type="text" id="raza" name="raza" value="{{raza}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
-
-        <label id="height" for="altura">Altura (M):</label> <br>
-        <input type="text" id="altura" name="altura" value="{{altura}}" pattern="^(?:[0-1](\.[0-9]{1,2})?)?$" title="Ingrese una altima Maxima 1.9 Metros" maxlength="4"  required>
-
-        <label id="weight" for="peso">Peso (KG):</label> <br>
-        <input type="text" id="peso" name="peso" value="{{peso}}" title="Por favor, ingresa una peso maximo Maximo de 300 KG"  pattern="^(300(\.0{1,2})?|[0-2]?\d{1,2}(\.\d{1,2})?)$" required>
-
-        <label id="weight" for="medicamentos">Medicamentos:</label>
-        <select class="form-control" name="medicamentos">
-          <option value="1" {% if medicamentos == '1' %}selected{% endif %}>1</option>
-          <option value="2" {% if medicamentos == '2' %}selected{% endif %}>2</option>
-          <option value="3" {% if medicamentos == '3' %}selected{% endif %}>3</option>
-          <option value="Otros" {% if medicamentos == 'otros' %}selected{% endif %}>Otros</option>
-        </select>
-
-
-        {{!-- detalle --}}
-
-        <label id="weight" for="peso">Numero Telefonico:</label> <br>
-        <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" value="{{numero_telefonico}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"  required>
-
-        <label id="weight" for="peso">Direccion del Propietario:</label> <br>
-        <input class="form-control" type="text" id="peso" name="direccion_mascota"  placeholder="Direccion del Propietario" value="{{direccion_mascota}}" required>
-
-        <label id="weight" for="peso">Fecha de la ultima vacuna:</label> <br>
-        <input class="form-control" type="date" id="peso" name="fecha_vacuna" placeholder="Fecha Vacuna" value="{{fecha_vacuna}}" required>
-
-        <label id="weight" for="peso">Nombre del Propietario:</label> <br>
-        <input class="form-control" type="text" id="peso" name="nombre_propietario" placeholder="Nombre propietario" value="{{nombre_propietario}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"   required>
-
-        <div id="boton">
-          <button type="submit">Actualizar</button>
-        </div>
-        <div class="cancelar">
-          <button type="submit">Cancelar</button>
-        </div>
+      <nav id="sidebar">
+      <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
+      <div class="user-info">
+          <h3>Camila</h3>
+          <h4>camila@example.com</h4>
       </div>
-    </div>
-    </div>
-</form>
-{{/each}}
+      {{!--  <a href="/usuario/agregar" class="menu-item active"><i class="fas fa-user" ></i> Usuario</a> --}}
+    
+      <a href="" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
+      <a href="/registro_familiar/agregar" class="menu-item"><i class="fas fa-users" ></i> Registro Familiares</a>
+      <a href="/registro_familiar/listar/" class="menu-item"><i class="fas fa-save"  ></i> Datos Guardados</a>
+      <a href="/mensaje_personalizado/agregar/" class="menu-item"><i class="fas fa-envelope" ></i> Mensaje de Notificación</a>
+      <a href="/mensaje_personalizado/listar/" class="menu-item"><i class="fas fa-save" ></i> Datos Guardados</a>
+      <a href="" class="menu-item"><i class="fas fa-history" ></i> Historial</a>
+      <a href="/historial_activacion/agregar/" class="menu-item"><i class="fas fa-history"></i> Historial de Activaciones</a>
+      <br><br>
+      <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
+  </nav>
+ <div class="crud-container">
+            <div class="crud-content">
+                <div class="actualizacion-objeto">
+                   <h2>Actualización de Mascotas</h2>
+                </div>
+                <div class="left-section">
+                    <label id="pet" for="mascota">Nombres:</label> <br>
+                    <input type="text" id="mascota" name="nombre_mascota" value="{{nombre_mascota}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
+            
+                    <label id="species" for="especie">Especie:</label> <br>
+                    <input type="text" id="especie" name="especie" value="{{especie}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
+            
+                    <label id="race" for="raza">Raza:</label> <br>
+                    <input type="text" id="raza" name="raza" value="{{raza}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios" required>
+            
+                    <label id="height" for="altura">Altura (M):</label> <br>
+                    <input type="text" id="altura" name="altura" value="{{altura}}" pattern="^(?:[0-1](\.[0-9]{1,2})?)?$" title="Ingrese una altima Maxima 1.9 Metros" maxlength="4"  required>
+            
+                    <label id="weight" for="peso">Peso (KG):</label> <br>
+                    <input type="text" id="peso" name="peso" value="{{peso}}" title="Por favor, ingresa una peso maximo Maximo de 300 KG"  pattern="^(300(\.0{1,2})?|[0-2]?\d{1,2}(\.\d{1,2})?)$" required>
+                   
+                </div>
+                <div class="right-section">
+                    <label id="weight" for="medicamentos">Medicamentos:</label>
+                    <select class="form-control" name="medicamentos">
+                      <option value="1" {% if medicamentos == '1' %}selected{% endif %}>1</option>
+                      <option value="2" {% if medicamentos == '2' %}selected{% endif %}>2</option>
+                      <option value="3" {% if medicamentos == '3' %}selected{% endif %}>3</option>
+                      <option value="Otros" {% if medicamentos == 'otros' %}selected{% endif %}>Otros</option>
+                    </select>
+            
+            
+                    {{!-- detalle --}}
+            
+                    <label id="weight" for="peso">Numero Telefonico:</label> <br>
+                    <input class="form-control" type="text" id="peso" name="numero_telefonico" placeholder="Numero telefonico" value="{{numero_telefonico}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"  required>
+            
+                    <label id="weight" for="peso">Direccion del Propietario:</label> <br>
+                    <input class="form-control" type="text" id="peso" name="direccion_mascota"  placeholder="Direccion del Propietario" value="{{direccion_mascota}}" required>
+            
+                    <label id="weight" for="peso">Fecha de la ultima vacuna:</label> <br>
+                    <input class="form-control" type="date" id="peso" name="fecha_vacuna" placeholder="Fecha Vacuna" value="{{fecha_vacuna}}" required>
+            
+                    <label id="weight" for="peso">Nombre del Propietario:</label> <br>
+                    <input class="form-control" type="text" id="peso" name="nombre_propietario" placeholder="Nombre propietario" value="{{nombre_propietario}}" pattern="[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+" title="Solo se permiten letras y espacios"   required>
+        
+        
+                </div>
+              <div class="button-section">
+                    <div id="Actualizar">
+                        <button type="submit">Actualizar</button>
+                    </div>
+                    <div class="cancelar">
+                        <button style="background-color: red;" type="submit">Cancelar</button>
+                    </div>   
+                </div>
+
+            </div>
+  </div>
+  </form>
+    {{/each}}
 
 </body>

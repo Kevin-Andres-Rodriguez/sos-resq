@@ -1,147 +1,74 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 #sidebar {
-    width: 250px;
-    background-color: #f8f9fa;
-    color: black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    transition: left 0.5s; /* Para el Nav en Responsive */
+  width: 250px;
+  background-color: #f8f9fa;
+  color: black;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: left 0.5s; /* Para el Nav en Responsive */
 }
 
 #sidebar a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    font-size: 17px;
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  font-size: 17px;
 }
 
 #sidebar a:hover {
-    background-color: #6ddef1;
+  background-color: #6ddef1;
 }
 
 .main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .menu-toggle {
-    display: none;
+  display: none;
 }
 
 .menu-icon {
-    cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
-    background-color: black;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  background-color: black;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
 }
 .textos {
-    color: #109cf1;
-    font-size: 24px;
-    border-bottom: 1px solid purple; 
-    padding-bottom: 2px; 
-   border-bottom-width: 2.5px; 
+  color: #109cf1;
+  font-size: 24px;
+  border-bottom: 1px solid purple; 
+  padding-bottom: 2px; 
+ border-bottom-width: 2.5px; 
 }
 .underline-text {
-    text-align: center;
-    border-bottom: 1px solid black; 
-    padding-bottom: 2px; 
-    border-bottom-width: 2.5px; 
+  text-align: center;
+  border-bottom: 1px solid black; 
+  padding-bottom: 2px; 
+  border-bottom-width: 2.5px; 
 }
 
 .menu-item img {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    margin-bottom: -10px;
-}
-
-.user-info h3 {
-    margin-top: -3px;
-    margin-left: 100px;
-  }
-  
-  h4 {
-      margin-top: -10px;
-      margin-left: 40px;
-      color: gray;
-  }
-
-/* TABLA */
-
-
-.contenedor {
-    margin: 20px;
-
-}
-
-table {
-    width: 950px;
-    border-collapse: collapse;
-    margin-top: 10px;
-    margin-left: 270px;
-}
-
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: center;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.subir {
-    padding: 100px;
-    margin-left: 100px;
-    margin-top: -100px;
-}
-
-.contenedor-botones {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  text-align: center; /* Centro los botones en el contenedor */
-  margin-top: 12px;
-}
-
-button {
-    width: 70px;
-    padding: 10px;
-    background-color: #109CF1;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-    height: 30px;
-    margin-top: -15px;
-    text-align: center; /* Centro los botones en el contenedor */
-}
-
-button:hover {
-    background-color: #0a88d8; 
+  color: #333;
+  text-decoration: none;
+  margin-bottom: -10px;
 }
 
 .user-info h3 {
@@ -155,96 +82,128 @@ h4 {
     color: gray;
 }
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 10px;
-    background-color: #f8f9fa; 
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999; /
-  }
+/* TABLA */
+
+
+.contenedor {
+  margin: 20px;
+}
+
+table {
+  width: 950px;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-left: 270px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
   
-  .logo {
-    width: 70px; 
-    height: 70px; 
-    margin-left: 10px; /
-  }
+}
 
+.subir {
+  padding: 100px;
+  margin-left: 100px;
+  margin-top: -100px;
+}
 
-    /* Consulta de medios para pantallas Verticales que 768px */
-    @media only screen and (max-width: 768px) {
-        /* Nav */
-        #sidebar {
-          left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
-          transition: left 0.5s; /* Para la transición */
-        }
-      
-        #sidebar.show {
-          left: 0; /* Muestra la barra lateral */
-        }
-      
-        .menu-toggle {
-          display: block; /* Hace que el boton sea visible */
-          cursor: pointer;
-          position: fixed;
-          top: 10px;
-          left: 10px;
-          z-index: 2;
-          font-size: 35px; /* Tamaño del Boton */
-        }
-      
-        /* LOGO */
-      
-        .logo-container {
-          justify-content: center; /* Centra el contenido en pantallas más pequeñas */
-        }
-      
-        .logo {
-          width: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
-          height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
-          margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
-        }
-      
-  /* Tabla */
+.contenedor-botones {
+  display: flex;
+  margin-top: 20px; 
+  margin-left: 100px;
+}
 
-  .titulo {
-    margin-top: 100px;
-    font-size: 10px;
+button {
+  width: 70px;
+  padding: 10px;
+  background-color: #109CF1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  height: 30px;
+  margin-top: -15px;
+}
 
-  }
-  .table-container {
-    overflow-x: auto; /* Hace que la tabla sea deslizable horizontalmente */
-    max-width: 100%; /* Ajusta el ancho máximo para asegurar el deslizamiento */
-    margin-top: 10%;
-    width: 93%;
-    margin-left: 15px;
-  }
+button:hover {
+  background-color: #0a88d8; 
+}
 
-  table {
-    width: 100%; /* Hace que la tabla sea 100% ancha en pantallas más pequeñas */
-    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
-    margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
-    font-size: 15px; /* Establece el tamaño de letra */
-  }
+.user-info h3 {
+margin-top: -3px;
+margin-left: 100px;
+}
 
-  th, td {
-    padding: 0.5vw; /* Ajusta el relleno en unidades relativas para pantallas más pequeñas */
-  }
+h4 {
+  margin-top: -10px;
+  margin-left: 40px;
+  color: gray;
+}
 
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #f8f9fa; 
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999; /
+}
 
-
-  button {
-    width: 50px;
-    padding: 6px;
-    margin-right: 3px;
-    height: 20px;
-    font-size: 11px;
-    margin-top: -10px;
+.logo {
+  width: 70px; 
+  height: 70px; 
+  margin-left: 10px; /
 }
 
 
-      
-  }
+  /* Consulta de medios para pantallas Verticales que 768px */
+  @media only screen and (max-width: 768px) {
+      /* Nav */
+      #sidebar {
+        left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
+        transition: left 0.5s; /* Para la transición */
+      }
+    
+      #sidebar.show {
+        left: 0; /* Muestra la barra lateral */
+      }
+    
+      .menu-toggle {
+        display: block; /* Hace que el boton sea visible */
+        cursor: pointer;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+        font-size: 35px; /* Tamaño del Boton */
+      }
+    
+      /* LOGO */
+    
+      .logo-container {
+        justify-content: center; /* Centra el contenido en pantallas más pequeñas */
+      }
+    
+      .logo {
+        width: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+        height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+      }
+    
+    
+    }

@@ -90,7 +90,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-left: 100px;
 }
 
@@ -130,6 +130,23 @@ button {
 .boton{
     margin-top: 20px;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: #f8f9fa; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999; /
+  }
+  
+  .logo {
+    width: 70px; 
+    height: 70px; 
+    margin-left: 10px; /
+  }
 
   /* Consulta de medios para pantallas Verticales que 768px */
   @media only screen and (max-width: 768px) {

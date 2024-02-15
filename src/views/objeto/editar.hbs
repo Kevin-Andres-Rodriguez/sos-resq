@@ -6,6 +6,11 @@
      {{!-- Para el Nav en Responsive  --}}
      <script src="/script/registro/nav.js"></script>
      <div class="menu-toggle">&#9776;</div>
+
+      <div class="logo-container">
+        <img src="/img/logo.jpeg" class="logo" alt="Logo">
+    </div>
+
      {{!-- Funcional --}}
  <nav id="sidebar">
     <a href="/inicio"><h1 class="textos">SOS RESQ</h1></a>
@@ -25,9 +30,12 @@
     <a href="/login/" class="underline-text">cerrar sesion <u></u></a>
 </nav>
 
-        <div class="crud-container">
-        <div class="crud-content">
-            <h2>Actualización de objeto</h2>
+<div class="crud-container">
+    <div class="crud-content">
+        <div class="actualizacion-objeto">
+           <h2>Actualización de objeto</h2>
+        </div>
+        <div class="left-section">
 
             <label id="marcas" for="marca">Marca</label> <br>
             <input type="text" id="marca" name="marca" value="{{marca}}" required>
@@ -40,8 +48,14 @@
 
             <label id="numero_contacto" for="numero_contacto">Numero de Contacto</label> <br>
             <input type="number" id="numero_contacto" name="numero_contacto" value="{{numero_contacto}}" pattern="[0-9]{10}" title="Ingrese un número de teléfono válido de 10 dígitos" maxlength="10" required>
-
-            <label id="correo_electronicos" for="correo_objeto">Correo Electronico</label> <br>
+            
+            <label id="color" for="color">Color</label> <br>
+            <input type="text" id="color" name="color" value="{{color}}" required>
+            <br> <br><br>
+            <br> <br>
+        </div>
+        <div class="right-section">
+          <label id="correo_electronicos" for="correo_objeto">Correo Electronico</label> <br>
             <input type="email" id="correo_electronico" name="correo_objeto" value="{{correo_objeto}}" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
 
             <label id="fecha_perdida" for="fecha_perdida">Fecha de la perdida</label> <br>
@@ -53,20 +67,19 @@
             <label id="ubicacion_perdida" for="ubicacion_perdida">Ubicación de la perdida</label> <br>
             <input type="text" id="ubicacion_perdida" name="ubicacion_perdida" value="{{ubicacion_perdida}}" required>
 
-            <label id="color" for="color">Color</label> <br>
-            <input type="text" id="color" name="color" value="{{color}}" required>
-            <br> <br><br>
-            <br> <br>
 
-            <div class="login">
+        </div>
+        <div class="button-section">
+             <div class="login">
                 <button style="background-color: red;" type="submit">Cancelar</button>
             </div>
             <div class="atras">
                 <button type="submit">Actualizar</button>
             </div>
         </div>
-        </div>
-        </div>
+    </div>
+</div>
+
 </form>
 {{/each}}
 </body>
