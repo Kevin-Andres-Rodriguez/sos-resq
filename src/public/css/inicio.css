@@ -2,6 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+   overflow: hidden; 
 }
 
 #sidebar {
@@ -73,6 +74,10 @@ h1{
   margin-bottom: -10px;
 }
 
+
+
+/* Container */
+
 .loca { 
 	color:rgba(0, 0, 0, 1);
 	width:370px;
@@ -103,19 +108,20 @@ h1{
   display: inline-block;
 }
 
-.mapa  {
-  width:300px; 
-  height:200px;
+.mapa, img {
+  width:290px; 
+  height:220px;
   position: absolute;
-  left: 400px;  
+  left: 200px;  
   top: 150px; 
+  margin-top: -70px;
 } 
 .dis { 
 	color:rgba(120.0624842941761, 30.515881329774857, 100.36223620176315, 1);
 	width:200px;
 	height:48px;
   position:absolute;
-  left:400px;
+  left:450px;
 	top:380px; 
 	font-family:Inknut Antiqua;
 	text-align:left;
@@ -138,19 +144,26 @@ h1{
 }
 
 .cpu  {
-  width:130px; 
+  width:100px; 
   height:120px;
   position: absolute;
-  left: 430px;
+  left: 240px;
   top: 410px; 
+  margin-top: -80px;
 }
 .mapita  {
   width:150px; 
   height:100px;
   position: absolute;
-  left: 930px;
-  top: 410px; 
+  left: 680px;
+  top: 410px;
+  margin-top: -60px; 
 }  
+
+.mapita,cpu,img{
+  width: 200px;
+  height: 150px;
+}
 .user-info h3 {
   margin-top: -3px;
   margin-left: 100px;
@@ -183,8 +196,8 @@ h4 {
   padding: 10px; 
   background-color: #f8f9fa; 
   position: fixed;
-  top: 0;
-  right: 0;
+  top: -7%;
+  right: 15%;
   z-index: 999; 
 }
 
@@ -194,39 +207,110 @@ h4 {
   margin-left: 10px; 
 }
 
-  /* Consulta de medios para pantallas Verticales que 768px */
-  @media only screen and (max-width: 768px) {
-    /* Nav */
-    #sidebar {
-      left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
-      transition: left 0.5s; /* Para la transición */
-    }
-  
-    #sidebar.show {
-      left: 0; /* Muestra la barra lateral */
-    }
-  
-    .menu-toggle {
-      display: block; /* Hace que el boton sea visible */
-      cursor: pointer;
-      position: fixed;
-      top: 10px;
-      left: 10px;
-      z-index: 2;
-      font-size: 35px; /* Tamaño del Boton */
-    }
-  
-    /* LOGO */
-  
-    .logo-container {
-      justify-content: center; /* Centra el contenido en pantallas más pequeñas */
-    }
-  
-    .logo {
-      width: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
-      height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
-      margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
-    }
-  
-  
+/* Consulta de medios para pantallas Verticales que 768px */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  #sidebar {
+    left: -250px; /* Oculta la barra lateral inicialmente fuera de la pantalla */
+    transition: left 0.5s; /* Para la transición */
   }
+
+  #sidebar.show {
+    left: 0; /* Muestra la barra lateral */
+  }
+
+
+
+  .menu-toggle {
+    display: block; /* Hace que el botón sea visible */
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    font-size: 35px; /* Tamaño del Botón */
+  }
+
+
+
+
+
+  /* LOGO */
+  .logo-container {
+    justify-content: center; /* Centra el contenido en pantallas más pequeñas */
+  }
+
+  .logo {
+    width: 50px; /* Ajusta el tamaño con el ancho de la ventana para pantallas más pequeñas */
+    height: 50px; /* Ajusta el tamaño con el ancho de la ventana para pantallas más pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+  }
+
+  .loca {
+    width: 80%;
+    left: 69%;
+    margin-top: 7px;
+    font-size: 13px;
+  }
+
+  .cuando {
+    width: 80%;
+    left: 10%;
+    margin-top: -90px;
+  }
+
+  .mapa {
+    width: 80%;
+    left: -30%;
+  }
+
+  .visua {
+    width: 80%;
+    left: 10%;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .cpu {
+    width: 80%;
+    left: -30%;
+    margin-top: -55px;
+  }
+
+  .dis {
+    width: 80%;
+    left: 23%;
+    margin-top: 240px;
+  }
+
+  .mapita {
+    width: 80%;
+    left: -29%;
+    margin-top: 190px;
+  }
+
+  .textoss h1 {
+    font-size: 40px;
+    margin-left: -390%;
+    margin-top: 40%;
+  }
+
+  .mapa {
+    top: 120px;
+    margin-top: 0;
+  }
+
+  .cuando,
+  .visua {
+    font-size: 20px;
+  }
+
+  .hidden-text {
+    display: none; /* Oculta los elementos con la clase hidden-text */
+  }
+
+  
+
+}
+
+
