@@ -89,11 +89,12 @@ h4 {
 #container {
   max-width: 400px;
   margin: 50px auto;
-  background-color: #fff;
+  background-color: #b6b6b688;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
+  margin-left: 530px;
 }
 
 h2 {

@@ -1,4 +1,4 @@
-body {
+  body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
@@ -92,7 +92,7 @@ h4 {
 }
 
 .crud-content {
-  background-color: #fff;
+  background-color: #b6b6b688;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
