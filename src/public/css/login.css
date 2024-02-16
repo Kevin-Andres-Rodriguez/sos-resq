@@ -9,10 +9,21 @@
 /* Login */
 
 
-.boton{
+.boton input[type="submit"]{
     position: absolute;
     top: 55%;
     margin-left: 70%;
+    border-radius: 4px;
+    color: aliceblue;
+    border: none;
+    background: linear-gradient(30deg, rgba(155, 155, 155, 0.842),rgb(51, 101, 238));;
+}
+.boton input[type="submit"]:hover {
+    background-color: #1f69d8;
+}
+.boton input[type="submit"]{
+    width: 90px;
+    height: 25px;
 }
 .contraseña{
     position: absolute;
@@ -89,10 +100,22 @@ label {
     top: 10%;
     left: 10%;
 }
-.registro{
+.registro a{
     text-decoration: none;
+    color: white;
 
 }
+.registro {
+    border-radius: 10px; 
+    width: 1.8cm; 
+    height: 0.4cm; 
+    padding: 10px; 
+    margin-left: 71%;
+    background: linear-gradient(30deg, rgba(155, 155, 155, 0.842),rgb(51, 101, 238));;
+}
+
+
+
 .login input[type="submit"] {
     background-color: #413df5;
     color: white;
@@ -171,12 +194,7 @@ label {
         font-size: 14px; /* Ajusta el tamaño de la fuente del ícono en pantallas más pequeñas */
     }
 
-    .boton {
-        position: static;
-        margin-left: 35%;
-        margin-top: 10px;
-    }
-
+    
 
 
     .login {

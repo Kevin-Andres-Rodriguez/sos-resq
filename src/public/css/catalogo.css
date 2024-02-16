@@ -1,14 +1,16 @@
+
 h1 {
     text-align: center;
     margin-top: 30px;
     margin-right: 5px;
+    
 }
 
 body{
     background-color: #ffffff;
     font-family: Helvetica;
     font-size: 14px;
-    color: rgb(94, 92, 92);
+    color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
 }
@@ -19,7 +21,7 @@ body{
 .swiper-slide{
     width: 300px;
     height: 300px;
-    background-color: #7c7c7c7e;
+    background:linear-gradient(30deg, rgba(221, 221, 221, 0.842),rgb(102, 171, 173));
     box-shadow: 0 0 20px rgba(0,0, 0, 0.4);
     padding: 40px;
     text-align: center;
@@ -65,6 +67,7 @@ body{
     color: #ffffff;
     text-decoration: none;
     margin-top: 50px;
+    background:linear-gradient(30deg, rgba(221, 221, 221, 0.842),rgb(102, 171, 173));
 }
 .logo-container {
     display: flex;
