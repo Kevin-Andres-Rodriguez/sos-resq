@@ -2,9 +2,9 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-#sidebar {
+  }
+  
+  #sidebar {
     width: 250px;
     background-color: #f8f9fa;
     color: black;
@@ -13,135 +13,183 @@ body {
     top: 0;
     bottom: 0;
     transition: left 0.5s; /* Para el Nav en Responsive */
-}
-
-#sidebar a {
+  }
+  
+  #sidebar a {
     color: black;
     text-decoration: none;
     display: block;
     padding: 10px;
     font-size: 17px;
-}
-
-#sidebar a:hover {
+  }
+  
+  #sidebar a:hover {
     background-color: #6ddef1;
-}
-
-.main {
+  }
+  
+  .main {
     padding: 20px;
-}
-
-.menu-toggle {
+  }
+  
+  .menu-toggle {
     display: none;
-}
-
-.menu-icon {
+  }
+  
+  .menu-icon {
     cursor: pointer;
     font-size: 24px;
     padding: 10px;
     background-color: black;
     color: #fff;
     border-radius: 0 5px 5px 0;
-}
-.textos {
+  }
+  .textos {
     color: #109cf1;
     font-size: 24px;
     border-bottom: 1px solid purple; 
     padding-bottom: 2px; 
    border-bottom-width: 2.5px; 
-}
-.underline-text {
+  }
+  .underline-text {
     text-align: center;
     border-bottom: 1px solid black; 
     padding-bottom: 2px; 
     border-bottom-width: 2.5px; 
-}
-
-.menu-item img {
+  }
+  
+  .menu-item img {
     margin-right: 10px;
     width: 25px;
     height: 25px;
-}
-
-.menu-item {
+  }
+  
+  .menu-item {
     display: flex;
     align-items: center;
     color: #333;
     text-decoration: none;
     margin-bottom: -10px;
+  }
+
+
+  
+
+/* --------------------solo tabla------------------------------------*/
+
+
+
+table {
+  width: 950px;
+  border-collapse: collapse;
+  margin-top: -90px;
+  margin-left: 330px;
 }
-.user-info h3 {
-    margin-top: -3px;
+
+th, td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #0a88d8;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subir {
+  padding: 100px;
+  margin-left: 100px;
+  margin-top: -100px;
+}
+
+.contenedor-botones {
+display: flex;
+flex-direction: row;
+align-items: center;
+text-align: center; /* Centro los botones en el contenedor */
+margin-top: 12px;
+}
+
+
+.subir {
+    padding: 100px;
     margin-left: 100px;
-  }
-  
-  h4 {
-      margin-top: -10px;
-      margin-left: 40px;
-      color: gray;
-  }
-  h1{
-    text-align: center;
-  }
-/*tabla*/
-
-.title {
-    text-align: center;
-    margin-top: 30px;
-    margin-left: 13%;
+    margin-top: -100px;
 }
 
-.container {
-    width: 70%;
-    margin: auto;
-    margin-top: 80px;
-    margin-left: 23%;
-    font-size: 13px;    
+.contenedor-botones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center; /* Centro los botones en el contenedor */
+  margin-top: 12px;
 }
 
-.row {
-    display: flex;
-    border-bottom: 1px solid #ddd;
 
+.subir {
+  padding: 100px;
+  margin-left: 260px;
+  margin-top: -60px;
+  text-align: center;
 }
 
-.row.header {
-    font-weight: bold;
-    background-color: #0a88d8;
-    margin: 0; 
+.contenedor-botones {
+  display: flex;
+  margin-top: 20px; 
 }
 
-.column {
-    flex: 1;
-    padding: 5px; /* Reducimos el relleno */
-    border: 1px solid black;
-    margin: -1px; 
-    font-size: 14px; 
+button {
+  width: 70px;
+  padding: 10px;
+  background-color: #109CF1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  height: 30px;
+  margin-top: -15px;
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        font-size: 12px;
-    }
-
+button:hover {
+  background-color: #0a88d8; 
 }
+
+.user-info h3 {
+margin-top: -3px;
+margin-left: 100px;
+}
+
+h4 {
+  margin-top: -10px;
+  margin-left: 40px;
+  color: gray;
+}
+
 .logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
-    padding: 10px; /* Ajusta el espaciado según tu preferencia */
-    background-color: #f8f9fa; /* Ajusta el color de fondo según tu diseño */
-    position: fixed;
-    top: 0;
-    right: 0; /* Alinea el contenedor a la parte superior derecha */
-    z-index: 999; /* Asegura que esté en la parte superior */
-  }
-  
-  .logo {
-    width: 70px; /* Ajusta el tamaño según tu preferencia */
-    height: 70px; /* Ajusta el tamaño según tu preferencia */
-    margin-left: 10px; /* Espacio entre el logo y el borde derecho del contenedor */
-  }
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; 
+  padding: 10px; 
+  background-color: #f8f9fa; 
+  position: fixed;
+  top: 0;
+  right: 0; 
+  z-index: 999; 
+}
+
+.logo {
+  width: 70px; 
+  height: 70px; 
+  margin-left: 10px;
+}
+
+
+
 
   /* Consulta de medios para pantallas Verticales que 768px */
   @media only screen and (max-width: 768px) {
@@ -176,6 +224,44 @@ body {
       height: 50px; /* Ajusta el tamaño  con el ancho de la ventana para pantallas más pequeñas */
       margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
     }
-  
-  
+
+      /* Tabla */
+
+      .subir {
+        display: flex; /* Usa un contenedor flexible para alinear en línea horizontal */
+        align-items: center; /* Centra verticalmente en el contenedor */
+        margin-top: -10px;
+        font-size: 20px;
+        margin-left: 0px;
+      }
+  .table-container {
+    overflow-x: auto; /* Hace que la tabla sea deslizable horizontalmente */
+    max-width: 100%; /* Ajusta el ancho máximo para asegurar el deslizamiento */
+    margin-top: -25%;
+    width: 93%;
+    margin-left: 15px;
+  }
+
+  table {
+    width: 100%; /* Hace que la tabla sea 100% ancha en pantallas más pequeñas */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas más pequeñas */
+    margin-right: 0; /* Elimina el margen derecho en pantallas más pequeñas */
+    font-size: 15px; /* Establece el tamaño de letra */
+  }
+
+  th, td {
+    padding: 0.5vw; /* Ajusta el relleno en unidades relativas para pantallas más pequeñas */
+  }
+
+
+
+  button {
+    width: 50px;
+    padding: 6px;
+    margin-right: 3px;
+    height: 20px;
+    font-size: 10px;
+
+}
+
   }

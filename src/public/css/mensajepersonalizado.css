@@ -89,7 +89,7 @@ h4 {
 #container {
   max-width: 400px;
   margin: 50px auto;
-  background-color: #b6b6b688;
+  background-color: #3f9bf7;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -126,7 +126,7 @@ input {
 button {
   width: 100px;
   padding: 10px;
-  background-color: #109cf1;
+  background-color: #2563EB;
   color: #fff;
   border: none;
   border-radius: 4px;
