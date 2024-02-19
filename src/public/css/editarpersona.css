@@ -96,7 +96,7 @@ h1{
 }
 
 .crud-content {
-    background-color: #b6b6b688;
+    background-color: #3f9bf7;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-left: 30px;
@@ -126,7 +126,7 @@ h1{
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     margin-left: -1000px;
-    margin-top: 320px; /* Empuja hacia abajo */
+    margin-top: 340px; /* Empuja hacia abajo */
     margin-bottom: 0px; /* Espacio entre las secciones y los botones */
 }
 .actualizacion-objeto {
