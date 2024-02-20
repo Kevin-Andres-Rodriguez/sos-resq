@@ -59,7 +59,7 @@
                 </div>
                 <div class="right-section">
                     <label id="direcciones" for="direccion">Direccion</label> <br>
-                    <input type="text" id="direccion" name="direccion" value="{{direccion}}" required>
+                    <input type="text" id="direccion" name="direccion" value="{{direccion}}" pattern="^[^@]+$" title="No se puede ingresar @" required>
 
                     <label id="correo_persona" for="correo_persona">Correo Electronico</label> <br>
                     <input type="text" id="correo_persona" name="correo_persona" value="{{correo_persona}}"

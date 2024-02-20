@@ -24,7 +24,7 @@
                     </select>
 <br>
                     <label id="direcciones" for="direccion">Dirección</label> 
-                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" required>
+                    <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Dirección" pattern="^[^@]+$" title="No se puede ingresar @" required>
 <br>
                     <label id="correo_electronicos" for="correo_persona">Correo Electrónico</label> 
                     <input type="email" class="form-control" id="correo_persona" name="correo_persona" placeholder="Correo electrónico" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese un correo válido" required>
