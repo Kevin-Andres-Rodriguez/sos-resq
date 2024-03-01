@@ -5,8 +5,7 @@ h1 {
     margin-right: 5px;
     
 }
-
-body{
+.btn-1{
     background-color: #ffffff;
     font-family: Helvetica;
     font-size: 14px;
@@ -14,6 +13,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+ /* 
 .swiper{
     width: 100%;
     padding: 150px 0 50px 0;
@@ -59,6 +60,7 @@ body{
 .product-img img{
     width: 120px;
 }
+ */
 .btn-1{
     display: inline-block;
     padding: 13px 55px;
@@ -69,151 +71,140 @@ body{
     margin-top: 50px;
     background:linear-gradient(30deg, rgba(221, 221, 221, 0.842),rgb(102, 171, 173));
 }
-.logo-container {
+
+
+
+
+  
+/* Codigo de las Tarjetas */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+h2{
+    text-decoration-color:blue;
+}
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl30obPgD0tMErKygCUflU4KRhjvo0PcuwTWLj241h5Q&s);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 330vh;
+}
+
+.container__cards{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
     display: flex;
-    align-items: center;
-    justify-content: flex-end; /* Alinea el contenido a la derecha */
-    padding: 10px; /* Ajusta el espaciado según tu preferencia */
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-    position: fixed;
-    top: 0;
-    right: 0; /* Alinea el contenedor a la parte superior derecha */
-    z-index: 999; /* Asegura que esté en la parte superior */
-  }
-  
-  .logo {
-    width: 70px; /* Ajusta el tamaño según tu preferencia */
-    height: 70px; /* Ajusta el tamaño según tu preferencia */
-    margin-left: 10px; /* Espacio entre el logo y el borde derecho del contenedor */
-  }
+.card{
+    width: 300px;
+    margin: 10px;
+    transition: all 300ms;
+}
 
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-  *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Lato', sans-serif;
-  }
-  h2{
-      text-decoration-color:blue;
-  }
-  
-  body{
-      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl30obPgD0tMErKygCUflU4KRhjvo0PcuwTWLj241h5Q&s);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: 330vh;
-  }
-  
-  .container__cards{
-      max-width: 1200px;
-      margin: auto;
-      margin-top: 100px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-  }
-  
-  .card{
-      width: 300px;
-      margin: 10px;
-      transition: all 300ms;
-  }
-  
-  .card:hover{
-      width: 350px;
-  }
-  
-  .card .cover{
-      width: 100%;
-      height: 250px;
-      position: relative;
-      overflow: hidden;
-  }
-  
-  .card .cover img{
-      width: 250px;
-      display: block;
-      margin: auto;
-      position: relative;
-      top: 40px;
-      z-index: 1;
-      filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
-      transition: all 400ms;
-  }
-  
-  .card:hover .cover img{
-      top: 0px;
-      filter: none;
-  }
-  
-  .card .img__back{
-      width: 100%;
-      height: 200px;
-      position: absolute;
-      bottom: -80px;
-      left: 0;
-      background-size: cover;
-      border-radius: 20px;
-      transition: all 300ms;
-  }
-  
-  .card:nth-of-type(1) .img__back{
-      background-image: url(../img/fondotarjeta.jpg);
-  }
-  
-  .card:nth-of-type(2) .img__back{
-      background-image: url(../img/fondotarjeta.jpg);
-  }
-  
-  .card:nth-of-type(3) .img__back{
-      background-image: url(../img/fondotarjeta.jpg);
-  }
-  
-  .card:hover .img__back{
-      bottom: -40px;
-  }
-  
-  .card .description{
-      background: white;
-      margin-top: -10px;
-      padding: 20px;
-      border-radius: 0px 0px 20px 20px;
-      transition: all 300ms;
-      border: 2px solid #100F0F;
-  }
-  
-  .card:hover .description{
-      padding: 40px;
-  }
-  
-  .card .description h2{
-      margin-top: 10px;
-  }
-  
-  .card .description p{
-      margin-top: 10px;
-  }
-  
-  .card .description input{
-      padding: 10px 40px;
-      margin-top: 20px;
-      border: none;
-      background: #9D9D9D;
-      color: white;
-      font-size: 14px;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: all 300ms;
-      background: linear-gradient(to right, #353333, #9991bc);
-  
-  }
-  
-  .card .description input:hover{
-      background: rgb(105, 105, 233);
-  }
-  
+.card:hover{
+    width: 350px;
+}
 
+.card .cover{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .cover img{
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    filter: drop-shadow(5px 5px 4px rgba(0,0,0,0.5));
+    transition: all 400ms;
+}
+
+.card:hover .cover img{
+    top: 0px;
+    filter: none;
+}
+
+.card .img__back{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    background-size: cover;
+    border-radius: 20px;
+    transition: all 300ms;
+}
+
+.card:nth-of-type(1) .img__back{
+    background-image: url(/img/fondotarjeta.jpg);
+}
+
+.card:nth-of-type(2) .img__back{
+    background-image: url(/img/fondotarjeta.jpg);
+}
+
+.card:nth-of-type(3) .img__back{
+    background-image: url(/img/fondotarjeta.jpg);
+}
+
+.card:hover .img__back{
+    bottom: -40px;
+}
+
+.card .description{
+    background: white;
+    margin-top: -10px;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+    transition: all 300ms;
+    border: 2px solid #100F0F;
+}
+
+.card:hover .description{
+    padding: 40px;
+}
+
+.card .description h2{
+    margin-top: 10px;
+}
+
+.card .description p{
+    margin-top: 10px;
+}
+
+.card .description input{
+    padding: 10px 40px;
+    margin-top: 20px;
+    border: none;
+    background: #9D9D9D;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 300ms;
+    background: linear-gradient(to right, #353333, #9991bc);
+
+}
+
+.card .description input:hover{
+    background: rgb(105, 105, 233);
+}
+
+
+/* Hasta aqui va */
 
   @media only screen and (max-width: 768px) {
 
