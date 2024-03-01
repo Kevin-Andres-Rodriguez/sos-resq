@@ -1,88 +1,90 @@
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
 
-#sidebar {
-    width: 250px;
-    background-color: #f8f9fa;
-    color: black;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    transition: left 0.5s; /* Para el Nav en Responsive */
-}
+    #sidebar {
+        width: 250px;
+        background-color: #f8f9fa;
+        color: rgb(255, 255, 255);
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        transition: left 0.5s; /* Para el Nav en Responsive */
+    }
+    
+    #sidebar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        font-size: 17px;
+    }
 
-#sidebar a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    font-size: 17px;
-}
+    #sidebar a:hover {
+        background-color: #6ddef1;
+    }
 
-#sidebar a:hover {
-    background-color: #6ddef1;
-}
+    .main {
+        padding: 20px;
+    }
 
-.main {
-    padding: 20px;
-}
+    .menu-toggle {
+        display: none;
+    }
+    h1{
+        text-align: center;
+    }
+    .menu-icon {
+        cursor: pointer;
+        font-size: 24px;
+        padding: 10px;
+        background-color: black;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+    }
+    .textos {
+        color: #ffffff;
+        font-size: 24px;
+        border-bottom: 3px solid rgb(255, 255, 255); 
+        padding-bottom: 10px; 
+    border-bottom-width:3px; 
+    }
+    .underline-text {
+        text-align: center;
+        border-bottom: 1px solid rgb(255, 255, 255); 
+        padding-bottom: 2px; 
+        border-bottom-width: 2.5px; 
+        margin-left: 20px;
+    }
 
-.menu-toggle {
-    display: none;
-}
-h1{
-    text-align: center;
-}
-.menu-icon {
-    cursor: pointer;
-    font-size: 24px;
-    padding: 10px;
-    background-color: black;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-}
-.textos {
-    color: #109cf1;
-    font-size: 24px;
-    border-bottom: 1px solid purple; 
-    padding-bottom: 2px; 
-   border-bottom-width: 2.5px; 
-}
-.underline-text {
-    text-align: center;
-    border-bottom: 1px solid black; 
-    padding-bottom: 2px; 
-    border-bottom-width: 2.5px; 
-}
+    .menu-item img {
+        margin-right: 10px;
+        width: 25px;
+        height: 25px;
+    }
 
-.menu-item img {
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-}
+    .menu-item {
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        text-decoration: none;
+        margin-bottom: -10px;
+    }
 
-.menu-item {
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    margin-bottom: -10px;
-}
+    .user-info h3 {
+        margin-top: -3px;
+        margin-left: 100px;
+    }
+    
+    h4 {
+        margin-top: -10px;
+        margin-left: 40px;
+        color: rgba(255, 255, 255, 0.653);
+    }
 
-.user-info h3 {
-    margin-top: -3px;
-    margin-left: 100px;
-  }
-  
-  h4 {
-      margin-top: -10px;
-      margin-left: 40px;
-      color: gray;
-  }
 /* TABLA */
 
 
@@ -177,7 +179,9 @@ button {
 .boton{
     margin-top: 20px;
 }
-
+#sidebar a:first-child {
+    margin-left: -30px; /* ajusta el margen izquierdo según sea necesario */
+}
 
 /* LOGO */
 
@@ -198,6 +202,7 @@ button {
     height: 70px; 
     margin-left: 10px; 
   }
+
 
   /* Consulta de medios para pantallas Verticales que 768px */
   @media only screen and (max-width: 768px) {
@@ -287,4 +292,18 @@ button {
     
   
   
+  }
+  .e1101_7031 { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Para colocarlo detrás del contenido */
+    background :linear-gradient(0deg, rgba(61.11145958304405, 66.90346598625183, 72.24999949336052, 1) 10%,rgba(61.11145958304405, 66.90346598625183, 72.24999949336052, 0.5550000071525574) 44.49999928474426%,rgba(61.11145958304405, 66.90346598625183, 72.24999949336052, 0.5550000071525574) 44.509997963905334%,rgba(61.11145958304405, 66.90346598625183, 72.24999949336052, 0.5550000071525574) 44.519996643066406%,rgba(61.11145958304405, 66.90346598625183, 72.24999949336052, 0.5550000071525574) 99.98999834060669%,rgba(61.11145958304405, 66.90346598625183, 72.24999949336052, 0) 100%) ;
+    width:252px;
+    height:610px;
+  }
+  #sidebar a:hover,
+  #sidebar a:active,
+  #sidebar a:focus {
+    background-color: #00000051; /* Cambia el color de fondo al hacer clic o al estar enfocado */
   }
